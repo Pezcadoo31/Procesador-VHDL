@@ -89,4 +89,5 @@ set_location_assignment PIN_B16 -to segments[10]
 set_location_assignment PIN_A17 -to segments[11]
 set_location_assignment PIN_A18 -to segments[12]
 set_location_assignment PIN_B17 -to segments[13]
+set_location_assignment PIN_F15 -to rst
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
