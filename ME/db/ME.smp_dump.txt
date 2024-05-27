@@ -1,0 +1,10 @@
+
+State Machine - |ME|edo
+Name edo.Load_inmA3 edo.Load_inmA2 edo.Load_inmA1 edo.Decode edo.Fetch2 edo.Fetch1 edo.Idle 
+edo.Idle 0 0 0 0 0 0 0 
+edo.Fetch1 0 0 0 0 0 1 1 
+edo.Fetch2 0 0 0 0 1 0 1 
+edo.Decode 0 0 0 1 0 0 1 
+edo.Load_inmA1 0 0 1 0 0 0 1 
+edo.Load_inmA2 0 1 0 0 0 0 1 
+edo.Load_inmA3 1 0 0 0 0 0 1 

@@ -1,0 +1,26 @@
+|MEM_PROGRAMA
+CLK => Data_out[0]~reg0.CLK
+CLK => Data_out[1]~reg0.CLK
+CLK => Data_out[2]~reg0.CLK
+CLK => Data_out[3]~reg0.CLK
+CLK => Data_out[4]~reg0.CLK
+CLK => Data_out[5]~reg0.CLK
+CLK => Data_out[6]~reg0.CLK
+CLK => Data_out[7]~reg0.CLK
+Address[0] => ROM.RADDR
+Address[1] => ROM.RADDR1
+Address[2] => ROM.RADDR2
+Address[3] => ROM.RADDR3
+Address[4] => ROM.RADDR4
+Address[5] => ROM.RADDR5
+Address[6] => ROM.RADDR6
+Data_out[0] <= Data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[1] <= Data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[2] <= Data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[3] <= Data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[4] <= Data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[5] <= Data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[6] <= Data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[7] <= Data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

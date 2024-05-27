@@ -1,0 +1,790 @@
+$comment
+	File created using the following command:
+		vcd file DATA_PATH.msim.vcd -direction
+$end
+$date
+	Thu May 16 12:02:36 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module data_path_vhd_vec_tst $end
+$var wire 1 ! A_Load $end
+$var wire 1 " address [7] $end
+$var wire 1 # address [6] $end
+$var wire 1 $ address [5] $end
+$var wire 1 % address [4] $end
+$var wire 1 & address [3] $end
+$var wire 1 ' address [2] $end
+$var wire 1 ( address [1] $end
+$var wire 1 ) address [0] $end
+$var wire 1 * ALU_Sel [7] $end
+$var wire 1 + ALU_Sel [6] $end
+$var wire 1 , ALU_Sel [5] $end
+$var wire 1 - ALU_Sel [4] $end
+$var wire 1 . ALU_Sel [3] $end
+$var wire 1 / ALU_Sel [2] $end
+$var wire 1 0 ALU_Sel [1] $end
+$var wire 1 1 ALU_Sel [0] $end
+$var wire 1 2 B_Load $end
+$var wire 1 3 Bus1_Sel [1] $end
+$var wire 1 4 Bus1_Sel [0] $end
+$var wire 1 5 Bus2_Sel [1] $end
+$var wire 1 6 Bus2_Sel [0] $end
+$var wire 1 7 CCR_Load $end
+$var wire 1 8 CCR_Result [3] $end
+$var wire 1 9 CCR_Result [2] $end
+$var wire 1 : CCR_Result [1] $end
+$var wire 1 ; CCR_Result [0] $end
+$var wire 1 < CLK $end
+$var wire 1 = from_memory [7] $end
+$var wire 1 > from_memory [6] $end
+$var wire 1 ? from_memory [5] $end
+$var wire 1 @ from_memory [4] $end
+$var wire 1 A from_memory [3] $end
+$var wire 1 B from_memory [2] $end
+$var wire 1 C from_memory [1] $end
+$var wire 1 D from_memory [0] $end
+$var wire 1 E IR [7] $end
+$var wire 1 F IR [6] $end
+$var wire 1 G IR [5] $end
+$var wire 1 H IR [4] $end
+$var wire 1 I IR [3] $end
+$var wire 1 J IR [2] $end
+$var wire 1 K IR [1] $end
+$var wire 1 L IR [0] $end
+$var wire 1 M IR_Load $end
+$var wire 1 N MAR_Load $end
+$var wire 1 O PC_Inc $end
+$var wire 1 P PC_Load $end
+$var wire 1 Q RST $end
+$var wire 1 R to_memory [7] $end
+$var wire 1 S to_memory [6] $end
+$var wire 1 T to_memory [5] $end
+$var wire 1 U to_memory [4] $end
+$var wire 1 V to_memory [3] $end
+$var wire 1 W to_memory [2] $end
+$var wire 1 X to_memory [1] $end
+$var wire 1 Y to_memory [0] $end
+
+$scope module i1 $end
+$var wire 1 Z gnd $end
+$var wire 1 [ vcc $end
+$var wire 1 \ unknown $end
+$var wire 1 ] devoe $end
+$var wire 1 ^ devclrn $end
+$var wire 1 _ devpor $end
+$var wire 1 ` ww_devoe $end
+$var wire 1 a ww_devclrn $end
+$var wire 1 b ww_devpor $end
+$var wire 1 c ww_CLK $end
+$var wire 1 d ww_RST $end
+$var wire 1 e ww_A_Load $end
+$var wire 1 f ww_B_Load $end
+$var wire 1 g ww_CCR_Load $end
+$var wire 1 h ww_IR_Load $end
+$var wire 1 i ww_MAR_Load $end
+$var wire 1 j ww_PC_Load $end
+$var wire 1 k ww_PC_Inc $end
+$var wire 1 l ww_ALU_Sel [7] $end
+$var wire 1 m ww_ALU_Sel [6] $end
+$var wire 1 n ww_ALU_Sel [5] $end
+$var wire 1 o ww_ALU_Sel [4] $end
+$var wire 1 p ww_ALU_Sel [3] $end
+$var wire 1 q ww_ALU_Sel [2] $end
+$var wire 1 r ww_ALU_Sel [1] $end
+$var wire 1 s ww_ALU_Sel [0] $end
+$var wire 1 t ww_Bus1_Sel [1] $end
+$var wire 1 u ww_Bus1_Sel [0] $end
+$var wire 1 v ww_Bus2_Sel [1] $end
+$var wire 1 w ww_Bus2_Sel [0] $end
+$var wire 1 x ww_from_memory [7] $end
+$var wire 1 y ww_from_memory [6] $end
+$var wire 1 z ww_from_memory [5] $end
+$var wire 1 { ww_from_memory [4] $end
+$var wire 1 | ww_from_memory [3] $end
+$var wire 1 } ww_from_memory [2] $end
+$var wire 1 ~ ww_from_memory [1] $end
+$var wire 1 !! ww_from_memory [0] $end
+$var wire 1 "! ww_IR [7] $end
+$var wire 1 #! ww_IR [6] $end
+$var wire 1 $! ww_IR [5] $end
+$var wire 1 %! ww_IR [4] $end
+$var wire 1 &! ww_IR [3] $end
+$var wire 1 '! ww_IR [2] $end
+$var wire 1 (! ww_IR [1] $end
+$var wire 1 )! ww_IR [0] $end
+$var wire 1 *! ww_address [7] $end
+$var wire 1 +! ww_address [6] $end
+$var wire 1 ,! ww_address [5] $end
+$var wire 1 -! ww_address [4] $end
+$var wire 1 .! ww_address [3] $end
+$var wire 1 /! ww_address [2] $end
+$var wire 1 0! ww_address [1] $end
+$var wire 1 1! ww_address [0] $end
+$var wire 1 2! ww_to_memory [7] $end
+$var wire 1 3! ww_to_memory [6] $end
+$var wire 1 4! ww_to_memory [5] $end
+$var wire 1 5! ww_to_memory [4] $end
+$var wire 1 6! ww_to_memory [3] $end
+$var wire 1 7! ww_to_memory [2] $end
+$var wire 1 8! ww_to_memory [1] $end
+$var wire 1 9! ww_to_memory [0] $end
+$var wire 1 :! ww_CCR_Result [3] $end
+$var wire 1 ;! ww_CCR_Result [2] $end
+$var wire 1 <! ww_CCR_Result [1] $end
+$var wire 1 =! ww_CCR_Result [0] $end
+$var wire 1 >! \CLK~combout\ $end
+$var wire 1 ?! \RST~combout\ $end
+$var wire 1 @! \B_Load~combout\ $end
+$var wire 1 A! \A_Load~combout\ $end
+$var wire 1 B! \PC_Load~combout\ $end
+$var wire 1 C! \PC_Inc~combout\ $end
+$var wire 1 D! \PC[0]~16_combout\ $end
+$var wire 1 E! \Mux7~0_combout\ $end
+$var wire 1 F! \Mux7~1_combout\ $end
+$var wire 1 G! \ALU_UNIT|I1|XOR2~combout\ $end
+$var wire 1 H! \ALU_UNIT|I1|I0|S~combout\ $end
+$var wire 1 I! \ALU_UNIT|I1|OR1~combout\ $end
+$var wire 1 J! \ALU_UNIT|I1|S~0_combout\ $end
+$var wire 1 K! \ALU_UNIT|I1|XOR1~combout\ $end
+$var wire 1 L! \ALU_UNIT|I1|S~1_combout\ $end
+$var wire 1 M! \ALU_UNIT|I1|S~2_combout\ $end
+$var wire 1 N! \ALU_UNIT|I1|S~3_combout\ $end
+$var wire 1 O! \Mux15~0_combout\ $end
+$var wire 1 P! \Mux15~1_combout\ $end
+$var wire 1 Q! \IR_Load~combout\ $end
+$var wire 1 R! \PC[0]~1\ $end
+$var wire 1 S! \Mux6~0_combout\ $end
+$var wire 1 T! \Mux6~1_combout\ $end
+$var wire 1 U! \ALU_UNIT|I1|C~0_combout\ $end
+$var wire 1 V! \ALU_UNIT|I2|OR1~0_combout\ $end
+$var wire 1 W! \ALU_UNIT|I2|XOR1~combout\ $end
+$var wire 1 X! \ALU_UNIT|I2|I1|S~combout\ $end
+$var wire 1 Y! \ALU_UNIT|I2|XOR2~combout\ $end
+$var wire 1 Z! \ALU_UNIT|I2|I0|S~combout\ $end
+$var wire 1 [! \ALU_UNIT|I2|S~0_combout\ $end
+$var wire 1 \! \ALU_UNIT|I2|S~1_combout\ $end
+$var wire 1 ]! \ALU_UNIT|I2|S~2_combout\ $end
+$var wire 1 ^! \ALU_UNIT|I2|S~3_combout\ $end
+$var wire 1 _! \Mux14~0_combout\ $end
+$var wire 1 `! \Mux14~1_combout\ $end
+$var wire 1 a! \PC[1]~3\ $end
+$var wire 1 b! \Mux5~0_combout\ $end
+$var wire 1 c! \Mux5~1_combout\ $end
+$var wire 1 d! \ALU_UNIT|I3|XOR1~combout\ $end
+$var wire 1 e! \ALU_UNIT|I3|XOR2~combout\ $end
+$var wire 1 f! \ALU_UNIT|I3|S~0_combout\ $end
+$var wire 1 g! \ALU_UNIT|I3|S~1_combout\ $end
+$var wire 1 h! \ALU_UNIT|I3|S~2_combout\ $end
+$var wire 1 i! \ALU_UNIT|I2|C~0_combout\ $end
+$var wire 1 j! \ALU_UNIT|I3|OR1~0_combout\ $end
+$var wire 1 k! \ALU_UNIT|I3|S~3_combout\ $end
+$var wire 1 l! \ALU_UNIT|I3|S~4_combout\ $end
+$var wire 1 m! \Mux13~0_combout\ $end
+$var wire 1 n! \Mux13~1_combout\ $end
+$var wire 1 o! \PC[2]~5\ $end
+$var wire 1 p! \Mux4~0_combout\ $end
+$var wire 1 q! \Mux4~1_combout\ $end
+$var wire 1 r! \ALU_UNIT|I3|C~0_combout\ $end
+$var wire 1 s! \ALU_UNIT|I4|OR1~0_combout\ $end
+$var wire 1 t! \ALU_UNIT|I4|A6~3_combout\ $end
+$var wire 1 u! \ALU_UNIT|I4|A6~2_combout\ $end
+$var wire 1 v! \ALU_UNIT|I4|XOR1~combout\ $end
+$var wire 1 w! \ALU_UNIT|I4|XOR2~combout\ $end
+$var wire 1 x! \ALU_UNIT|I4|S~0_combout\ $end
+$var wire 1 y! \ALU_UNIT|I4|S~1_combout\ $end
+$var wire 1 z! \ALU_UNIT|I4|S~2_combout\ $end
+$var wire 1 {! \ALU_UNIT|I4|S~3_combout\ $end
+$var wire 1 |! \Mux12~0_combout\ $end
+$var wire 1 }! \Mux12~1_combout\ $end
+$var wire 1 ~! \PC[3]~7\ $end
+$var wire 1 !" \Mux3~0_combout\ $end
+$var wire 1 "" \Mux3~1_combout\ $end
+$var wire 1 #" \ALU_UNIT|I4|C~0_combout\ $end
+$var wire 1 $" \ALU_UNIT|I5|OR1~0_combout\ $end
+$var wire 1 %" \ALU_UNIT|I5|A6~3_combout\ $end
+$var wire 1 &" \ALU_UNIT|I5|A6~2_combout\ $end
+$var wire 1 '" \ALU_UNIT|I5|XOR1~combout\ $end
+$var wire 1 (" \ALU_UNIT|I5|XOR2~combout\ $end
+$var wire 1 )" \ALU_UNIT|I5|S~0_combout\ $end
+$var wire 1 *" \ALU_UNIT|I5|S~1_combout\ $end
+$var wire 1 +" \ALU_UNIT|I5|S~2_combout\ $end
+$var wire 1 ," \ALU_UNIT|I5|S~3_combout\ $end
+$var wire 1 -" \Mux11~0_combout\ $end
+$var wire 1 ." \Mux11~1_combout\ $end
+$var wire 1 /" \PC[4]~9\ $end
+$var wire 1 0" \Mux2~0_combout\ $end
+$var wire 1 1" \Mux2~1_combout\ $end
+$var wire 1 2" \ALU_UNIT|I5|C~0_combout\ $end
+$var wire 1 3" \ALU_UNIT|I6|OR1~0_combout\ $end
+$var wire 1 4" \ALU_UNIT|I6|A6~3_combout\ $end
+$var wire 1 5" \ALU_UNIT|I6|A6~2_combout\ $end
+$var wire 1 6" \ALU_UNIT|I6|XOR1~combout\ $end
+$var wire 1 7" \ALU_UNIT|I6|XOR2~combout\ $end
+$var wire 1 8" \ALU_UNIT|I6|S~0_combout\ $end
+$var wire 1 9" \ALU_UNIT|I6|S~1_combout\ $end
+$var wire 1 :" \ALU_UNIT|I6|S~2_combout\ $end
+$var wire 1 ;" \ALU_UNIT|I6|S~3_combout\ $end
+$var wire 1 <" \Mux10~0_combout\ $end
+$var wire 1 =" \Mux10~1_combout\ $end
+$var wire 1 >" \PC[5]~11\ $end
+$var wire 1 ?" \Mux1~0_combout\ $end
+$var wire 1 @" \Mux1~1_combout\ $end
+$var wire 1 A" \ALU_UNIT|I6|C~0_combout\ $end
+$var wire 1 B" \ALU_UNIT|I7|OR1~0_combout\ $end
+$var wire 1 C" \ALU_UNIT|I7|A6~3_combout\ $end
+$var wire 1 D" \ALU_UNIT|I7|A6~2_combout\ $end
+$var wire 1 E" \ALU_UNIT|I7|XOR1~combout\ $end
+$var wire 1 F" \ALU_UNIT|I7|XOR2~combout\ $end
+$var wire 1 G" \ALU_UNIT|I7|S~0_combout\ $end
+$var wire 1 H" \ALU_UNIT|I7|S~1_combout\ $end
+$var wire 1 I" \ALU_UNIT|I7|S~2_combout\ $end
+$var wire 1 J" \ALU_UNIT|I7|S~3_combout\ $end
+$var wire 1 K" \Mux9~0_combout\ $end
+$var wire 1 L" \Mux9~1_combout\ $end
+$var wire 1 M" \PC[6]~13\ $end
+$var wire 1 N" \Mux0~0_combout\ $end
+$var wire 1 O" \Mux0~1_combout\ $end
+$var wire 1 P" \Mux8~0_combout\ $end
+$var wire 1 Q" \ALU_UNIT|I7|C~0_combout\ $end
+$var wire 1 R" \ALU_UNIT|I8|OR1~0_combout\ $end
+$var wire 1 S" \ALU_UNIT|I8|A6~3_combout\ $end
+$var wire 1 T" \ALU_UNIT|I8|A6~2_combout\ $end
+$var wire 1 U" \ALU_UNIT|I8|XOR1~combout\ $end
+$var wire 1 V" \ALU_UNIT|I8|XOR2~combout\ $end
+$var wire 1 W" \ALU_UNIT|I8|S~0_combout\ $end
+$var wire 1 X" \ALU_UNIT|I8|S~1_combout\ $end
+$var wire 1 Y" \ALU_UNIT|I8|S~2_combout\ $end
+$var wire 1 Z" \ALU_UNIT|I8|S~3_combout\ $end
+$var wire 1 [" \Mux8~1_combout\ $end
+$var wire 1 \" \MAR_Load~combout\ $end
+$var wire 1 ]" \ALU_UNIT|I8|C~0_combout\ $end
+$var wire 1 ^" \CCR_Load~combout\ $end
+$var wire 1 _" \ALU_UNIT|Mux0~0_combout\ $end
+$var wire 1 `" \ALU_UNIT|Mux0~1_combout\ $end
+$var wire 1 a" IR_REG [7] $end
+$var wire 1 b" IR_REG [6] $end
+$var wire 1 c" IR_REG [5] $end
+$var wire 1 d" IR_REG [4] $end
+$var wire 1 e" IR_REG [3] $end
+$var wire 1 f" IR_REG [2] $end
+$var wire 1 g" IR_REG [1] $end
+$var wire 1 h" IR_REG [0] $end
+$var wire 1 i" B_REG [7] $end
+$var wire 1 j" B_REG [6] $end
+$var wire 1 k" B_REG [5] $end
+$var wire 1 l" B_REG [4] $end
+$var wire 1 m" B_REG [3] $end
+$var wire 1 n" B_REG [2] $end
+$var wire 1 o" B_REG [1] $end
+$var wire 1 p" B_REG [0] $end
+$var wire 1 q" MAR [7] $end
+$var wire 1 r" MAR [6] $end
+$var wire 1 s" MAR [5] $end
+$var wire 1 t" MAR [4] $end
+$var wire 1 u" MAR [3] $end
+$var wire 1 v" MAR [2] $end
+$var wire 1 w" MAR [1] $end
+$var wire 1 x" MAR [0] $end
+$var wire 1 y" A_REG [7] $end
+$var wire 1 z" A_REG [6] $end
+$var wire 1 {" A_REG [5] $end
+$var wire 1 |" A_REG [4] $end
+$var wire 1 }" A_REG [3] $end
+$var wire 1 ~" A_REG [2] $end
+$var wire 1 !# A_REG [1] $end
+$var wire 1 "# A_REG [0] $end
+$var wire 1 ## \Bus1_Sel~combout\ [1] $end
+$var wire 1 $# \Bus1_Sel~combout\ [0] $end
+$var wire 1 %# PC [7] $end
+$var wire 1 &# PC [6] $end
+$var wire 1 '# PC [5] $end
+$var wire 1 (# PC [4] $end
+$var wire 1 )# PC [3] $end
+$var wire 1 *# PC [2] $end
+$var wire 1 +# PC [1] $end
+$var wire 1 ,# PC [0] $end
+$var wire 1 -# \from_memory~combout\ [7] $end
+$var wire 1 .# \from_memory~combout\ [6] $end
+$var wire 1 /# \from_memory~combout\ [5] $end
+$var wire 1 0# \from_memory~combout\ [4] $end
+$var wire 1 1# \from_memory~combout\ [3] $end
+$var wire 1 2# \from_memory~combout\ [2] $end
+$var wire 1 3# \from_memory~combout\ [1] $end
+$var wire 1 4# \from_memory~combout\ [0] $end
+$var wire 1 5# CCR [3] $end
+$var wire 1 6# CCR [2] $end
+$var wire 1 7# CCR [1] $end
+$var wire 1 8# CCR [0] $end
+$var wire 1 9# \ALU_Sel~combout\ [7] $end
+$var wire 1 :# \ALU_Sel~combout\ [6] $end
+$var wire 1 ;# \ALU_Sel~combout\ [5] $end
+$var wire 1 <# \ALU_Sel~combout\ [4] $end
+$var wire 1 =# \ALU_Sel~combout\ [3] $end
+$var wire 1 ># \ALU_Sel~combout\ [2] $end
+$var wire 1 ?# \ALU_Sel~combout\ [1] $end
+$var wire 1 @# \ALU_Sel~combout\ [0] $end
+$var wire 1 A# \Bus2_Sel~combout\ [1] $end
+$var wire 1 B# \Bus2_Sel~combout\ [0] $end
+$var wire 1 C# \ALT_INV_RST~combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+02
+07
+0<
+0M
+0N
+0O
+0P
+1Q
+0Z
+1[
+x\
+1]
+1^
+1_
+1`
+1a
+1b
+0c
+1d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0>!
+1?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+1a!
+0b!
+0c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+0q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+1~!
+0!"
+0""
+0#"
+0$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+06"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+1>"
+0?"
+0@"
+0A"
+0B"
+0C"
+0D"
+0E"
+0F"
+0G"
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+0W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+0]"
+0^"
+1_"
+1`"
+0C#
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+03
+04
+05
+06
+1=
+1>
+1?
+1@
+1A
+1B
+1C
+1D
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+1x
+1y
+1z
+1{
+1|
+1}
+1~
+1!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+0n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+0y"
+0z"
+0{"
+0|"
+0}"
+0~"
+0!#
+0"#
+0##
+0$#
+0%#
+0&#
+0'#
+0(#
+0)#
+0*#
+0+#
+0,#
+1-#
+1.#
+1/#
+10#
+11#
+12#
+13#
+14#
+05#
+06#
+07#
+08#
+09#
+0:#
+0;#
+0<#
+0=#
+0>#
+0?#
+0@#
+0A#
+0B#
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+08
+09
+0:
+0;
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+$end
+#40000
+1<
+1c
+1>!
+#80000
+0<
+15
+0c
+1v
+1A#
+0>!
+1P!
+1`!
+1n!
+1}!
+1."
+1="
+1L"
+1P"
+1["
+#120000
+1<
+1c
+1>!
+#160000
+0<
+05
+1!
+0c
+0v
+1e
+1A!
+0A#
+0>!
+0P!
+0`!
+0n!
+0}!
+0."
+0="
+0L"
+0P"
+0["
+#200000
+1<
+1c
+1>!
+#240000
+0<
+0!
+14
+0c
+0e
+1u
+1$#
+0A!
+0>!
+#280000
+1<
+1c
+1>!
+#320000
+0<
+0c
+0>!
+#360000
+1<
+1c
+1>!
+#400000
+0<
+0c
+0>!
+#440000
+1<
+1c
+1>!
+#480000
+0<
+0c
+0>!
+#520000
+1<
+04
+1c
+0u
+0$#
+1>!
+#560000
+0<
+0c
+0>!
+#600000
+1<
+1c
+1>!
+#640000
+0<
+0c
+0>!
+#680000
+1<
+1c
+1>!
+#720000
+0<
+0c
+0>!
+#760000
+1<
+1c
+1>!
+#800000
+0<
+0c
+0>!
+#840000
+1<
+1c
+1>!
+#880000
+0<
+0c
+0>!
+#920000
+1<
+1c
+1>!
+#960000
+0<
+0c
+0>!
+#1000000

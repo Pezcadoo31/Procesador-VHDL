@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/ricar/Desktop/PROCESADOR/ALU_8BITS/simulation/qsim
+Ealu_8bits
+Z0 w1715889925
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx5 maxii 15 maxii_atom_pack 0 22 UddCE4:[ZTgdUbg3[6]jY1
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx5 maxii 16 maxii_components 0 22 ;h@c4g`FNB<kFf5CF1khW3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 dC:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim
+Z8 8ALU_8BITS.vho
+Z9 FALU_8BITS.vho
+l0
+L34
+VhUa60icc4Q]H=:hP@JJ<D2
+!s100 ;A5A5_Q@]5cIY2JiE`1fi1
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1715889925
+!i10b 1
+Z12 !s108 1715889925.000000
+Z13 !s90 -work|work|ALU_8BITS.vho|
+Z14 !s107 ALU_8BITS.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 alu_8bits 0 22 hUa60icc4Q]H=:hP@JJ<D2
+l146
+L46
+VXe4M<QeBKSb85fTG]=PNm2
+!s100 7cP5BYbP6JJCNSUaM;GWY3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ealu_8bits_vhd_vec_tst
+Z17 w1715889924
+R5
+R6
+R7
+Z18 8ALU_8BITS.vwf.vht
+Z19 FALU_8BITS.vwf.vht
+l0
+L31
+VNc<djQ8<4kd]@@^?Q0aeQ0
+!s100 392=@OQGR=0TJaSmjXhG=1
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|ALU_8BITS.vwf.vht|
+Z21 !s107 ALU_8BITS.vwf.vht|
+!i113 1
+R15
+R16
+Aalu_8bits_arch
+R5
+R6
+Z22 DEx4 work 21 alu_8bits_vhd_vec_tst 0 22 Nc<djQ8<4kd]@@^?Q0aeQ0
+l54
+L33
+V6]@``eG?W`]M44oO0@kXV0
+!s100 gVkOXNzJjOoA`nB:N[^X[2
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16

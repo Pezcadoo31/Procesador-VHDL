@@ -1,0 +1,32 @@
+|ME
+clk => edo~1.DATAIN
+rst => edo~3.DATAIN
+IR[0] => Equal0.IN7
+IR[1] => Equal0.IN5
+IR[2] => Equal0.IN4
+IR[3] => Equal0.IN3
+IR[4] => Equal0.IN2
+IR[5] => Equal0.IN6
+IR[6] => Equal0.IN1
+IR[7] => Equal0.IN0
+CCR_result[0] => ~NO_FANOUT~
+CCR_result[1] => ~NO_FANOUT~
+CCR_result[2] => ~NO_FANOUT~
+CCR_result[3] => ~NO_FANOUT~
+IR_load <= IR_load.DB_MAX_OUTPUT_PORT_TYPE
+Mar_load <= Mar_load.DB_MAX_OUTPUT_PORT_TYPE
+PC_inc <= PC_inc.DB_MAX_OUTPUT_PORT_TYPE
+PC_load <= <GND>
+A_load <= A_load.DB_MAX_OUTPUT_PORT_TYPE
+B_load <= <GND>
+CCR_load <= <GND>
+writee <= <GND>
+ALU_sel[0] <= <GND>
+ALU_sel[1] <= <GND>
+ALU_sel[2] <= <GND>
+BUS1_sel[0] <= <GND>
+BUS1_sel[1] <= <GND>
+Bus2_sel[0] <= Bus2_sel.DB_MAX_OUTPUT_PORT_TYPE
+Bus2_sel[1] <= Bus2_sel.DB_MAX_OUTPUT_PORT_TYPE
+
+

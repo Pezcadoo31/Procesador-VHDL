@@ -1,0 +1,113 @@
+Flow report for BIT_SLICE
+Thu May 16 13:48:47 2024
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------+
+; Flow Summary                                                        ;
++-----------------------+---------------------------------------------+
+; Flow Status           ; Successful - Thu May 16 13:48:47 2024       ;
+; Quartus Prime Version ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name         ; BIT_SLICE                                   ;
+; Top-level Entity Name ; BIT_SLICE                                   ;
+; Family                ; MAX II                                      ;
+; Total logic elements  ; 10                                          ;
+; Total pins            ; 13                                          ;
+; Total virtual pins    ; 0                                           ;
+; UFM blocks            ; 0 / 1 ( 0 % )                               ;
++-----------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/16/2024 13:39:27 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; BIT_SLICE           ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                    ;
++--------------------------+-------------------------------+---------------+-------------+------------+
+; Assignment Name          ; Value                         ; Default Value ; Entity Name ; Section Id ;
++--------------------------+-------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID    ; 9619531671717.171588836708736 ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY ; output_files                  ; --            ; --          ; --         ;
++--------------------------+-------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4762 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4612 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4612 MB             ; 00:00:00                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:03                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; TheOne           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; TheOne           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; TheOne           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; TheOne           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; TheOne           ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off BIT_SLICE -c BIT_SLICE
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off BIT_SLICE -c BIT_SLICE --vector_source=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/BIT_SLICE/BIT_SLICE.vwf --testbench_file=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/BIT_SLICE/simulation/qsim/BIT_SLICE.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/BIT_SLICE/simulation/qsim/ BIT_SLICE -c BIT_SLICE
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off BIT_SLICE -c BIT_SLICE --vector_source=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/BIT_SLICE/BIT_SLICE.vwf --testbench_file=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/BIT_SLICE/simulation/qsim/BIT_SLICE.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/BIT_SLICE/simulation/qsim/ BIT_SLICE -c BIT_SLICE
+
+
+

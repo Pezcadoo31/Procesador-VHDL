@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BIT_SLICE is
+	port(A,B,NA,NB,Cin,AnB,notB,notA,AxB,AoB,AmasB: in std_logic;
+		  C,S: out std_logic);
+end entity
+
+architecture arc of BIT_SLICE is
+
+component (A, B : in std_logic;
+			S, Co : out std_logic);
+end component;
+
+begin
+
+
+
+end arc;

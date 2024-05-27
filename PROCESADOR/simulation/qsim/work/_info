@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/ricar/Desktop/TE2003B/PROCESSOR/PROCESADOR/simulation/qsim
+Ehard_block
+Z0 w1716219230
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+Z7 dC:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/simulation/qsim
+Z8 8PROCESADOR.vho
+Z9 FPROCESADOR.vho
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1716219231
+!i10b 1
+Z12 !s108 1716219231.000000
+Z13 !s90 -work|work|PROCESADOR.vho|
+Z14 !s107 PROCESADOR.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eprocesador
+R0
+R2
+R6
+R1
+Z17 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+R3
+R4
+R5
+Z18 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+R7
+R8
+R9
+l0
+L90
+V7UCENRDf=PGek=8ehE[n=2
+!s100 CXPCE[<WWSAYR;1lXd7?D1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R6
+R1
+R17
+R3
+R4
+R5
+R18
+DEx4 work 10 procesador 0 22 7UCENRDf=PGek=8ehE[n=2
+l2887
+L390
+VD>J]<fV5^^Nb`F8U:k`PP3
+!s100 @TMa<?f2C9=e1R;;R:mZ>1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eprocesador_vhd_vec_tst
+Z19 w1716219228
+R4
+R5
+R7
+Z20 8PROCESADOR.vwf.vht
+Z21 FPROCESADOR.vwf.vht
+l0
+L31
+VDPYl2C_AF1VGbDXNhE6bX3
+!s100 zSFciASKbWBEQ]SMk`LCi2
+R10
+32
+Z22 !s110 1716219232
+!i10b 1
+Z23 !s108 1716219232.000000
+Z24 !s90 -work|work|PROCESADOR.vwf.vht|
+Z25 !s107 PROCESADOR.vwf.vht|
+!i113 1
+R15
+R16
+Aprocesador_arch
+R4
+R5
+Z26 DEx4 work 22 procesador_vhd_vec_tst 0 22 DPYl2C_AF1VGbDXNhE6bX3
+l108
+L33
+V_e302A7B`imACfHCB`LN22
+!s100 LaME9LfB3R<bl1:fz3^@E2
+R10
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R15
+R16

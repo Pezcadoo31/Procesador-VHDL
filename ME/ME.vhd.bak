@@ -1,0 +1,135 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ME is
+	port(clk,rst : IN std_logic;
+			IR : IN std_logic_vector (7 downto 0);
+			CCR_result : IN std_logic_vector(3 downto 0);
+			IR_load,Mar_load,PC_inc,PC_load,A_load,B_load,CCR_load,writee : out std_logic;
+			ALU_sel : OUT std_logic_vector(2 downto 0);
+			BUS1_sel,Bus2_sel : OUT std_logic_vector(1 downto 0));
+end entity;
+
+
+architecture arc of ME is
+
+	type ESTADOS is (Idle,Fetch1,Fetch2,Decode,Load_inmA1,Load_inmA2,Load_inmA3);
+	signal edo,edof : ESTADOS;
+
+	BEGIN
+		P1: process (clk, rst) is 
+			begin 
+				if(rst = '0')then 
+					edo <= Idle;
+				elsif(clk'event and clk = '1')then 
+					edo <= edof;
+				end if;
+			end process P1;
+
+		P2: process (IR) is 
+			begin
+				case edo is 
+					when idle => edof <= fetch1;
+					when Fetch1 => edof <= fetch2;
+					when Fetch2 => edof <= decode;
+					when Decode => if(IR = X"DE")then
+											edof <= Load_inmA1;
+										else 
+											edof <= Idle;
+										end if;
+					when Load_inmA1 => edof <= Load_inmA2;
+					when Load_inmA2 => edof <= Load_inmA3;
+					when Load_inmA3 => edof <= Idle;
+				end case;
+						
+			end process P2;
+			
+		P3: process(edo) is
+			begin
+				case edo is
+					when idle => IR_load <= '0';
+									MAR_load <= '1';
+									PC_load  <= '0';
+									PC_inc   <='0';
+									A_load   <= '0';
+									B_Load   <= '0';
+									ALU_sel  <= "000";
+									CCR_load <= '0';
+									Bus1_sel <= "00";
+									Bus2_sel <= "01";
+									writee <= '0';
+									
+				 when Fetch1 => IR_load <= '0';
+									MAR_load <= '0';
+									PC_load  <= '0';
+									PC_inc   <= '1';
+									A_load   <= '0';
+									B_Load   <= '0';
+									ALU_sel  <= "000";
+									CCR_load <= '0';
+									Bus1_sel <= "00";
+									Bus2_sel <= "00";
+									writee <= '0';
+									
+				when Fetch2 => IR_load <= '1';
+									MAR_load <= '0';
+									PC_load  <= '0';
+									PC_inc   <= '0';
+									A_load   <= '0';
+									B_Load   <= '0';
+									ALU_sel  <= "000";
+									CCR_load <= '0';
+									Bus1_sel <= "00";
+									Bus2_sel <= "10";
+									writee <= '0';
+									
+				when Decode => IR_load <= '0';
+									MAR_load <= '0';
+									PC_load  <= '0';
+									PC_inc   <= '0';
+									A_load   <= '0';
+									B_Load   <= '0';
+									ALU_sel  <= "000";
+									CCR_load <= '0';
+									Bus1_sel <= "00";
+									Bus2_sel <= "00";
+									writee <= '0';
+									
+				when Load_inmA1 => IR_load <= '0';
+									MAR_load <= '1';
+									PC_load  <= '0';
+									PC_inc   <= '0';
+									A_load   <= '0';
+									B_Load   <= '0';
+									ALU_sel  <= "000";
+									CCR_load <= '0';
+									Bus1_sel <= "00";
+									Bus2_sel <= "01";
+									writee <= '0';
+									
+				when load_inmA2 => IR_load <= '0';
+									MAR_load <= '0';
+									PC_load  <= '0';
+									PC_inc   <= '1';
+									A_load   <= '0';
+									B_Load   <= '0';
+									ALU_sel  <= "000";
+									CCR_load <= '0';
+									Bus1_sel <= "00";
+									Bus2_sel <= "00";
+									writee <= '0';
+									
+				when Load_inmA3 => IR_load <= '0';
+									MAR_load <= '0';
+									PC_load  <= '0';
+									PC_inc   <= '0';
+									A_load   <= '1';
+									B_Load   <= '0';
+									ALU_sel  <= "000";
+									CCR_load <= '0';
+									Bus1_sel <= "00";
+									Bus2_sel <= "10";
+									writee <= '0';
+				end case;									
+			end process P3;
+end arc;

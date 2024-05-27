@@ -1,0 +1,158 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga_lite/18.0/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_8BITS -c ALU_8BITS --vector_source="C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/ALU_8BITS.vwf" --testbench_file="C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim/ALU_8BITS.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu May 16 14:05:24 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_8BITS -c ALU_8BITS --vector_source=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/ALU_8BITS.vwf --testbench_file=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim/ALU_8BITS.vwf.vht
+Info (119004): Automatically selected device EPM240T100C3 for design ALU_8BITS
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim/" ALU_8BITS -c ALU_8BITS
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu May 16 14:05:25 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim/ ALU_8BITS -c ALU_8BITS
+Info (119004): Automatically selected device EPM240T100C3 for design ALU_8BITS
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file ALU_8BITS.vho in folder "C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4615 megabytes
+    Info: Processing ended: Thu May 16 14:05:25 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim/ALU_8BITS.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga_lite/18.0/modelsim_ase/win32aloem//vsim -c -do ALU_8BITS.do
+
+Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+
+
+# 10.5b
+
+# do ALU_8BITS.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:05:25 on May 16,2024
+# vcom -work work ALU_8BITS.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package maxii_atom_pack
+# -- Loading package maxii_components
+# -- Compiling entity ALU_8BITS
+# -- Compiling architecture structure of ALU_8BITS
+# End time: 14:05:25 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:05:25 on May 16,2024
+# vcom -work work ALU_8BITS.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_8BITS_vhd_vec_tst
+# -- Compiling architecture ALU_8BITS_arch of ALU_8BITS_vhd_vec_tst
+# End time: 14:05:25 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L maxii -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ALU_8BITS_vhd_vec_tst 
+# Start time: 14:05:25 on May 16,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_8bits_vhd_vec_tst(alu_8bits_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading maxii.maxii_atom_pack(body)
+# Loading maxii.maxii_components
+# Loading work.alu_8bits(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading maxii.maxii_io(behave)
+# Loading maxii.maxii_lcell(vital_le_atom)
+# Loading maxii.maxii_asynch_lcell(vital_le)
+# Loading maxii.maxii_lcell_register(vital_le_reg)
+# ** Warning: Design size of 12784 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#31
+
+# End time: 14:05:26 on May 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/ALU_8BITS.vwf...
+
+Reading C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim/ALU_8BITS.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: Bc - signal not found in VCD.
+
+Warning: Bn - signal not found in VCD.
+
+Warning: Bov - signal not found in VCD.
+
+Warning: Bz - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/ricar/Desktop/TE2003B/PROCESSOR/ALU_8BITS/simulation/qsim/ALU_8BITS_20240516140526.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.
