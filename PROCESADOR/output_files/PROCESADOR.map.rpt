@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PROCESADOR
-Sun May 26 18:12:36 2024
+Sun May 26 22:18:26 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -45,16 +45,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 26 18:12:36 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun May 26 22:18:26 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; PROCESADOR                                  ;
 ; Top-level Entity Name              ; PROCESADOR                                  ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 1,933                                       ;
-;     Total combinational functions  ; 1,043                                       ;
+; Total logic elements               ; 1,954                                       ;
+;     Total combinational functions  ; 1,064                                       ;
 ;     Dedicated logic registers      ; 1,026                                       ;
 ; Total registers                    ; 1026                                        ;
-; Total pins                         ; 258                                         ;
+; Total pins                         ; 272                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -69,7 +69,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; 10M50DAF484C8G     ;                    ;
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
 ; Top-level entity name                                            ; PROCESADOR         ; PROCESADOR         ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -164,30 +164,31 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                            ;
-+--------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path     ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                                                 ; Library ;
-+--------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../../../HA/HA.vhd                   ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/HA/HA.vhd                                             ;         ;
-; ../PUERTOS_SALIDA/PUERTOS_SALIDA.vhd ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PUERTOS_SALIDA/PUERTOS_SALIDA.vhd ;         ;
-; ../MEMORIA/MEMORIA.vhd               ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEMORIA/MEMORIA.vhd               ;         ;
-; ../MEM_PROGRAMA/MEM_PROGRAMA.vhd     ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEM_PROGRAMA/MEM_PROGRAMA.vhd     ;         ;
-; ../MEM_DATOS/MEM_DATOS.vhd           ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEM_DATOS/MEM_DATOS.vhd           ;         ;
-; ../CPU/CPU.vhd                       ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/CPU/CPU.vhd                       ;         ;
-; ../ME/ME.vhd                         ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ME/ME.vhd                         ;         ;
-; ../DATA_PATH/DATA_PATH.vhd           ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/DATA_PATH/DATA_PATH.vhd           ;         ;
-; ../BIT_SLICE/BIT_SLICE.vhd           ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/BIT_SLICE/BIT_SLICE.vhd           ;         ;
-; ../ALU_8BITS/ALU_8BITS.vhd           ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ALU_8BITS/ALU_8BITS.vhd           ;         ;
-; PROCESADOR.vhd                       ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd         ;         ;
-+--------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                ;
++----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                                                   ; Library ;
++----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../BCD_to_7Segment/BCD_to_7Segment.vhd ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/BCD_to_7Segment/BCD_to_7Segment.vhd ;         ;
+; ../../../HA/HA.vhd                     ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/HA/HA.vhd                                               ;         ;
+; ../PUERTOS_SALIDA/PUERTOS_SALIDA.vhd   ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PUERTOS_SALIDA/PUERTOS_SALIDA.vhd   ;         ;
+; ../MEMORIA/MEMORIA.vhd                 ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEMORIA/MEMORIA.vhd                 ;         ;
+; ../MEM_PROGRAMA/MEM_PROGRAMA.vhd       ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEM_PROGRAMA/MEM_PROGRAMA.vhd       ;         ;
+; ../MEM_DATOS/MEM_DATOS.vhd             ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEM_DATOS/MEM_DATOS.vhd             ;         ;
+; ../CPU/CPU.vhd                         ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/CPU/CPU.vhd                         ;         ;
+; ../ME/ME.vhd                           ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ME/ME.vhd                           ;         ;
+; ../DATA_PATH/DATA_PATH.vhd             ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/DATA_PATH/DATA_PATH.vhd             ;         ;
+; ../BIT_SLICE/BIT_SLICE.vhd             ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/BIT_SLICE/BIT_SLICE.vhd             ;         ;
+; ../ALU_8BITS/ALU_8BITS.vhd             ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ALU_8BITS/ALU_8BITS.vhd             ;         ;
+; PROCESADOR.vhd                         ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd           ;         ;
++----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -195,59 +196,60 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 1,933     ;
+; Estimated Total logic elements              ; 1,954     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1043      ;
+; Total combinational functions               ; 1064      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 831       ;
-;     -- 3 input functions                    ; 52        ;
-;     -- <=2 input functions                  ; 160       ;
+;     -- 4 input functions                    ; 843       ;
+;     -- 3 input functions                    ; 60        ;
+;     -- <=2 input functions                  ; 161       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1036      ;
+;     -- normal mode                          ; 1057      ;
 ;     -- arithmetic mode                      ; 7         ;
 ;                                             ;           ;
 ; Total registers                             ; 1026      ;
 ;     -- Dedicated logic registers            ; 1026      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 258       ;
+; I/O pins                                    ; 272       ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 1026      ;
-; Total fan-out                               ; 7383      ;
-; Average fan-out                             ; 2.86      ;
+; Total fan-out                               ; 7485      ;
+; Average fan-out                             ; 2.84      ;
 +---------------------------------------------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                         ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                   ; Entity Name    ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------+----------------+--------------+
-; |PROCESADOR                    ; 1043 (0)            ; 1026 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 258  ; 0            ; 0          ; |PROCESADOR                                                           ; PROCESADOR     ; work         ;
-;    |CPU:I0|                    ; 298 (0)             ; 114 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0                                                    ; CPU            ; work         ;
-;       |DATA_PATH:I0|           ; 214 (140)           ; 44 (44)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0                                       ; DATA_PATH      ; work         ;
-;          |ALU_8BITS:ALU_UNIT|  ; 74 (4)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT                    ; ALU_8BITS      ; work         ;
-;             |BIT_SLICE:I1|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1       ; BIT_SLICE      ; work         ;
-;             |BIT_SLICE:I2|     ; 8 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2       ; BIT_SLICE      ; work         ;
-;                |ha:I1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2|ha:I1 ; ha             ; work         ;
-;             |BIT_SLICE:I3|     ; 6 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3       ; BIT_SLICE      ; work         ;
-;                |ha:I1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3|ha:I1 ; ha             ; work         ;
-;             |BIT_SLICE:I4|     ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I4       ; BIT_SLICE      ; work         ;
-;             |BIT_SLICE:I5|     ; 8 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5       ; BIT_SLICE      ; work         ;
-;                |ha:I1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5|ha:I1 ; ha             ; work         ;
-;             |BIT_SLICE:I6|     ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I6       ; BIT_SLICE      ; work         ;
-;             |BIT_SLICE:I7|     ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7       ; BIT_SLICE      ; work         ;
-;             |BIT_SLICE:I8|     ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I8       ; BIT_SLICE      ; work         ;
-;       |ME:I1|                  ; 84 (84)             ; 70 (70)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|ME:I1                                              ; ME             ; work         ;
-;    |MEMORIA:I1|                ; 745 (11)            ; 912 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|MEMORIA:I1                                                ; MEMORIA        ; work         ;
-;       |MEM_DATOS:MEM_DATO|     ; 686 (686)           ; 776 (776)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|MEMORIA:I1|MEM_DATOS:MEM_DATO                             ; MEM_DATOS      ; work         ;
-;       |MEM_PROGRAMA:MEM_PROG|  ; 24 (24)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|MEMORIA:I1|MEM_PROGRAMA:MEM_PROG                          ; MEM_PROGRAMA   ; work         ;
-;       |PUERTOS_SALIDA:PUERTOS| ; 24 (24)             ; 128 (128)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|MEMORIA:I1|PUERTOS_SALIDA:PUERTOS                         ; PUERTOS_SALIDA ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                          ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                   ; Entity Name     ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------+-----------------+--------------+
+; |PROCESADOR                    ; 1064 (0)            ; 1026 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 272  ; 0            ; 0          ; |PROCESADOR                                                           ; PROCESADOR      ; work         ;
+;    |BCD_to_7Segment:I2|        ; 29 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|BCD_to_7Segment:I2                                        ; BCD_to_7Segment ; work         ;
+;    |CPU:I0|                    ; 290 (0)             ; 114 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0                                                    ; CPU             ; work         ;
+;       |DATA_PATH:I0|           ; 206 (139)           ; 44 (44)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0                                       ; DATA_PATH       ; work         ;
+;          |ALU_8BITS:ALU_UNIT|  ; 67 (4)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT                    ; ALU_8BITS       ; work         ;
+;             |BIT_SLICE:I1|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1       ; BIT_SLICE       ; work         ;
+;             |BIT_SLICE:I2|     ; 8 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2       ; BIT_SLICE       ; work         ;
+;                |ha:I1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2|ha:I1 ; ha              ; work         ;
+;             |BIT_SLICE:I3|     ; 7 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3       ; BIT_SLICE       ; work         ;
+;                |ha:I1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3|ha:I1 ; ha              ; work         ;
+;             |BIT_SLICE:I4|     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I4       ; BIT_SLICE       ; work         ;
+;             |BIT_SLICE:I5|     ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5       ; BIT_SLICE       ; work         ;
+;             |BIT_SLICE:I6|     ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I6       ; BIT_SLICE       ; work         ;
+;             |BIT_SLICE:I7|     ; 7 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7       ; BIT_SLICE       ; work         ;
+;                |ha:I1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7|ha:I1 ; ha              ; work         ;
+;             |BIT_SLICE:I8|     ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I8       ; BIT_SLICE       ; work         ;
+;       |ME:I1|                  ; 84 (84)             ; 70 (70)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|CPU:I0|ME:I1                                              ; ME              ; work         ;
+;    |MEMORIA:I1|                ; 745 (11)            ; 912 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|MEMORIA:I1                                                ; MEMORIA         ; work         ;
+;       |MEM_DATOS:MEM_DATO|     ; 686 (686)           ; 776 (776)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|MEMORIA:I1|MEM_DATOS:MEM_DATO                             ; MEM_DATOS       ; work         ;
+;       |MEM_PROGRAMA:MEM_PROG|  ; 24 (24)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|MEMORIA:I1|MEM_PROGRAMA:MEM_PROG                          ; MEM_PROGRAMA    ; work         ;
+;       |PUERTOS_SALIDA:PUERTOS| ; 24 (24)             ; 128 (128)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |PROCESADOR|MEMORIA:I1|PUERTOS_SALIDA:PUERTOS                         ; PUERTOS_SALIDA  ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -371,7 +373,7 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 258                         ;
+; boundary_port         ; 272                         ;
 ; cycloneiii_ff         ; 1026                        ;
 ;     CLR               ; 70                          ;
 ;     ENA               ; 776                         ;
@@ -379,17 +381,17 @@ Encoding Type:  One-Hot
 ;     ENA CLR SCLR      ; 1                           ;
 ;     ENA CLR SLD       ; 8                           ;
 ;     plain             ; 8                           ;
-; cycloneiii_lcell_comb ; 1043                        ;
+; cycloneiii_lcell_comb ; 1065                        ;
 ;     arith             ; 7                           ;
 ;         2 data inputs ; 7                           ;
-;     normal            ; 1036                        ;
-;         1 data inputs ; 62                          ;
-;         2 data inputs ; 91                          ;
-;         3 data inputs ; 52                          ;
-;         4 data inputs ; 831                         ;
+;     normal            ; 1058                        ;
+;         1 data inputs ; 63                          ;
+;         2 data inputs ; 92                          ;
+;         3 data inputs ; 60                          ;
+;         4 data inputs ; 843                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 21.00                       ;
-; Average LUT depth     ; 5.71                        ;
+; Average LUT depth     ; 5.67                        ;
 +-----------------------+-----------------------------+
 
 
@@ -398,7 +400,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -408,10 +410,13 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 26 18:12:15 2024
+    Info: Processing started: Sun May 26 22:18:08 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROCESADOR -c PROCESADOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/abdyv/onedrive - instituto tecnologico y de estudios superiores de monterrey/documents/quartus/sistemasenchip/processor/processor/bcd_to_7segment/bcd_to_7segment.vhd
+    Info (12022): Found design unit 1: BCD_to_7Segment-arc File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/BCD_to_7Segment/BCD_to_7Segment.vhd Line: 11
+    Info (12023): Found entity 1: BCD_to_7Segment File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/BCD_to_7Segment/BCD_to_7Segment.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /users/abdyv/onedrive - instituto tecnologico y de estudios superiores de monterrey/documents/quartus/sistemasenchip/ha/ha.vhd
     Info (12022): Found design unit 1: ha-arc File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/HA/HA.vhd Line: 17
     Info (12023): Found entity 1: ha File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/HA/HA.vhd Line: 10
@@ -444,10 +449,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
     Info (12022): Found design unit 1: ALU_8BITS-arc File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ALU_8BITS/ALU_8BITS.vhd Line: 16
     Info (12023): Found entity 1: ALU_8BITS File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ALU_8BITS/ALU_8BITS.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file procesador.vhd
-    Info (12022): Found design unit 1: PROCESADOR-arc File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 11
-    Info (12023): Found entity 1: PROCESADOR File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 4
+    Info (12022): Found design unit 1: PROCESADOR-arc File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 59
+    Info (12023): Found entity 1: PROCESADOR File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 48
 Info (12127): Elaborating entity "PROCESADOR" for the top level hierarchy
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:I0" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 40
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:I0" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 97
 Info (12128): Elaborating entity "DATA_PATH" for hierarchy "CPU:I0|DATA_PATH:I0" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/CPU/CPU.vhd Line: 45
 Info (12128): Elaborating entity "ALU_8BITS" for hierarchy "CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/DATA_PATH/DATA_PATH.vhd Line: 111
 Info (12128): Elaborating entity "BIT_SLICE" for hierarchy "CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ALU_8BITS/ALU_8BITS.vhd Line: 29
@@ -470,10 +475,11 @@ Warning (10492): VHDL Process Statement warning at ME.vhd(132): signal "CCR_resu
 Warning (10492): VHDL Process Statement warning at ME.vhd(134): signal "CCR_result" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ME/ME.vhd Line: 134
 Warning (10492): VHDL Process Statement warning at ME.vhd(136): signal "CCR_result" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ME/ME.vhd Line: 136
 Warning (10492): VHDL Process Statement warning at ME.vhd(138): signal "CCR_result" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/ME/ME.vhd Line: 138
-Info (12128): Elaborating entity "MEMORIA" for hierarchy "MEMORIA:I1" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 41
+Info (12128): Elaborating entity "MEMORIA" for hierarchy "MEMORIA:I1" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 98
 Info (12128): Elaborating entity "MEM_PROGRAMA" for hierarchy "MEMORIA:I1|MEM_PROGRAMA:MEM_PROG" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEMORIA/MEMORIA.vhd Line: 54
 Info (12128): Elaborating entity "MEM_DATOS" for hierarchy "MEMORIA:I1|MEM_DATOS:MEM_DATO" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEMORIA/MEMORIA.vhd Line: 55
 Info (12128): Elaborating entity "PUERTOS_SALIDA" for hierarchy "MEMORIA:I1|PUERTOS_SALIDA:PUERTOS" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/MEMORIA/MEMORIA.vhd Line: 56
+Info (12128): Elaborating entity "BCD_to_7Segment" for hierarchy "BCD_to_7Segment:I2" File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/PROCESADOR.vhd Line: 104
 Warning (113028): 32 out of 128 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/db/PROCESADOR.ram0_MEM_DATOS_64bec5bf.hdl.mif Line: 1
     Warning (113027): Addresses ranging from 96 to 127 are not initialized File: C:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/SistemasEnChip/PROCESSOR/PROCESSOR/PROCESADOR/db/PROCESADOR.ram0_MEM_DATOS_64bec5bf.hdl.mif Line: 1
 Info (276014): Found 2 instances of uninferred RAM logic
@@ -482,14 +488,14 @@ Info (276014): Found 2 instances of uninferred RAM logic
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2207 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2242 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 130 input pins
-    Info (21059): Implemented 128 output pins
-    Info (21061): Implemented 1949 logic cells
+    Info (21059): Implemented 142 output pins
+    Info (21061): Implemented 1970 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Sun May 26 18:12:36 2024
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 4814 megabytes
+    Info: Processing ended: Sun May 26 22:18:26 2024
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:12
 
 

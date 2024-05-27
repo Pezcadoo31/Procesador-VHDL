@@ -37,7 +37,7 @@
 
 
 set_global_assignment -name FAMILY "MAX 10"
-set_global_assignment -name DEVICE 10M50DAF484C8G
+set_global_assignment -name DEVICE 10M50DAF484C7G
 set_global_assignment -name TOP_LEVEL_ENTITY PROCESADOR
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:58:24  MAY 14, 2024"
@@ -51,6 +51,16 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_N5 -to clk
+set_location_assignment PIN_C10 -to port_in_00[0]
+set_location_assignment PIN_C11 -to port_in_00[1]
+set_location_assignment PIN_D12 -to port_in_00[2]
+set_location_assignment PIN_C12 -to port_in_00[3]
+set_location_assignment PIN_A12 -to port_in_00[4]
+set_location_assignment PIN_B12 -to port_in_00[5]
+set_location_assignment PIN_A13 -to port_in_00[6]
+set_location_assignment PIN_A14 -to port_in_00[7]
+set_global_assignment -name VHDL_FILE ../BCD_to_7Segment/BCD_to_7Segment.vhd
 set_global_assignment -name VHDL_FILE ../../../HA/HA.vhd
 set_global_assignment -name VHDL_FILE ../../ARITH/HA/HA.vhd
 set_global_assignment -name VHDL_FILE ../PUERTOS_SALIDA/PUERTOS_SALIDA.vhd
@@ -65,24 +75,18 @@ set_global_assignment -name VHDL_FILE ../ALU_8BITS/ALU_8BITS.vhd
 set_global_assignment -name VHDL_FILE PROCESADOR.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name SOURCE_FILE db/PROCESADOR.cmp.rdb
-set_location_assignment PIN_N5 -to clk
-set_location_assignment PIN_C10 -to port_in_00[0]
-set_location_assignment PIN_C11 -to port_in_00[1]
-set_location_assignment PIN_D12 -to port_in_00[2]
-set_location_assignment PIN_C12 -to port_in_00[3]
-set_location_assignment PIN_A12 -to port_in_00[4]
-set_location_assignment PIN_B12 -to port_in_00[5]
-set_location_assignment PIN_A13 -to port_in_00[6]
-set_location_assignment PIN_A14 -to port_in_00[7]
-set_location_assignment PIN_F15 -to rst
-set_location_assignment PIN_A8 -to port_out_15[0]
-set_location_assignment PIN_A9 -to port_out_15[1]
-set_location_assignment PIN_A10 -to port_out_15[2]
-set_location_assignment PIN_B10 -to port_out_15[3]
-set_location_assignment PIN_D13 -to port_out_15[4]
-set_location_assignment PIN_C13 -to port_out_15[5]
-set_location_assignment PIN_E14 -to port_out_15[6]
-set_location_assignment PIN_D14 -to port_out_15[7]
-set_location_assignment PIN_A11 -to port_out_14[0]
-set_location_assignment PIN_B11 -to port_out_14[1]
+set_location_assignment PIN_C14 -to segments[0]
+set_location_assignment PIN_E15 -to segments[1]
+set_location_assignment PIN_C15 -to segments[2]
+set_location_assignment PIN_C16 -to segments[3]
+set_location_assignment PIN_E16 -to segments[4]
+set_location_assignment PIN_D17 -to segments[5]
+set_location_assignment PIN_C17 -to segments[6]
+set_location_assignment PIN_C18 -to segments[7]
+set_location_assignment PIN_D18 -to segments[8]
+set_location_assignment PIN_E18 -to segments[9]
+set_location_assignment PIN_B16 -to segments[10]
+set_location_assignment PIN_A17 -to segments[11]
+set_location_assignment PIN_A18 -to segments[12]
+set_location_assignment PIN_B17 -to segments[13]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

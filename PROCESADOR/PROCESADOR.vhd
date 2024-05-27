@@ -1,43 +1,113 @@
+--library ieee;
+--use ieee.std_logic_1164.all;
+--
+--entity PROCESADOR is
+--port(clk, rst: in std_logic;
+--	  port_in_00,port_in_01,port_in_02,port_in_03,port_in_04,port_in_05,port_in_06,port_in_07,port_in_08,port_in_09,port_in_10,port_in_11,port_in_12,port_in_13,port_in_14,port_in_15: in std_logic_vector(7 downto 0);
+--	  port_out_00,port_out_01,port_out_02,port_out_03,port_out_04,port_out_05,port_out_06,port_out_07,port_out_08,port_out_09,port_out_10,port_out_11,port_out_12,port_out_13,port_out_14,port_out_15: out std_logic_vector(7 downto 0));
+--end entity;
+--
+--
+--architecture arc of PROCESADOR is
+--
+--component CPU is 
+--port(clk, rst: in std_logic; 
+--	  from_mem: in std_logic_vector (7 downto 0);
+--	  writee: out std_logic;
+--	  to_mem, addr: out std_logic_vector(7 downto 0));
+--	 end component;
+--	 
+--component MEMORIA is 
+--	PORT( CLK, RST, WR	: in std_logic;
+--			Address			: in std_logic_vector (7 downto 0);
+--			Data_in 			: in std_logic_vector (7 downto 0);
+--			P_in_00, P_in_01, P_in_02, P_in_03	: in std_logic_vector (7 downto 0);
+--			P_in_04, P_in_05, P_in_06, P_in_07	: in std_logic_vector (7 downto 0);
+--			P_in_08, P_in_09, P_in_10, P_in_11	: in std_logic_vector (7 downto 0);
+--			P_in_12, P_in_13, P_in_14, P_in_15	: in std_logic_vector (7 downto 0);
+--			Data_out			: out std_logic_vector (7 downto 0);
+--			P_out_00, P_out_01, P_out_02, P_out_03	: out std_logic_vector (7 downto 0);
+--			P_out_04, P_out_05, P_out_06, P_out_07	: out std_logic_vector (7 downto 0);
+--			P_out_08, P_out_09, P_out_10, P_out_11	: out std_logic_vector (7 downto 0);
+--			P_out_12, P_out_13, P_out_14, P_out_15	: out std_logic_vector (7 downto 0));
+--end component;
+--
+--signal from_mems, to_mems: std_logic_vector(7 downto 0);
+--signal writee: std_logic;
+--signal addrs: std_logic_vector (7 downto 0);
+--
+--begin
+--I0: CPU port map(clk, rst, from_mems, writee, to_mems, addrs);
+--I1: memORIA port map(clk, rst,writee,addrs, to_mems,port_in_00,port_in_01,port_in_02,port_in_03,port_in_04,port_in_05,port_in_06,port_in_07,port_in_08,port_in_09,port_in_10,port_in_11,port_in_12,port_in_13,port_in_14,port_in_15, from_mems,port_out_00,port_out_01,port_out_02,port_out_03,port_out_04,port_out_05,port_out_06,port_out_07,port_out_08,port_out_09,port_out_10,port_out_11,port_out_12,port_out_13,port_out_14,port_out_15);
+--
+--end arc;
+
 library ieee;
 use ieee.std_logic_1164.all;
 
 entity PROCESADOR is
-port(clk, rst: in std_logic;
-	  port_in_00,port_in_01,port_in_02,port_in_03,port_in_04,port_in_05,port_in_06,port_in_07,port_in_08,port_in_09,port_in_10,port_in_11,port_in_12,port_in_13,port_in_14,port_in_15: in std_logic_vector(7 downto 0);
-	  port_out_00,port_out_01,port_out_02,port_out_03,port_out_04,port_out_05,port_out_06,port_out_07,port_out_08,port_out_09,port_out_10,port_out_11,port_out_12,port_out_13,port_out_14,port_out_15: out std_logic_vector(7 downto 0));
+    port(
+        clk, rst: in std_logic;
+        port_in_00, port_in_01, port_in_02, port_in_03, port_in_04, port_in_05, port_in_06, port_in_07,
+        port_in_08, port_in_09, port_in_10, port_in_11, port_in_12, port_in_13, port_in_14, port_in_15: in std_logic_vector(7 downto 0);
+        port_out_00, port_out_01, port_out_02, port_out_03, port_out_04, port_out_05, port_out_06, port_out_07,
+        port_out_08, port_out_09, port_out_10, port_out_11, port_out_12, port_out_13, port_out_14, port_out_15: out std_logic_vector(7 downto 0);
+        segments: out std_logic_vector(13 downto 0) -- Salida para el display de 7 segmentos
+    );
 end entity;
-
 
 architecture arc of PROCESADOR is
 
-component CPU is 
-port(clk, rst: in std_logic; 
-	  from_mem: in std_logic_vector (7 downto 0);
-	  writee: out std_logic;
-	  to_mem, addr: out std_logic_vector(7 downto 0));
-	 end component;
-	 
-component MEMORIA is 
-	PORT( CLK, RST, WR	: in std_logic;
-			Address			: in std_logic_vector (7 downto 0);
-			Data_in 			: in std_logic_vector (7 downto 0);
-			P_in_00, P_in_01, P_in_02, P_in_03	: in std_logic_vector (7 downto 0);
-			P_in_04, P_in_05, P_in_06, P_in_07	: in std_logic_vector (7 downto 0);
-			P_in_08, P_in_09, P_in_10, P_in_11	: in std_logic_vector (7 downto 0);
-			P_in_12, P_in_13, P_in_14, P_in_15	: in std_logic_vector (7 downto 0);
-			Data_out			: out std_logic_vector (7 downto 0);
-			P_out_00, P_out_01, P_out_02, P_out_03	: out std_logic_vector (7 downto 0);
-			P_out_04, P_out_05, P_out_06, P_out_07	: out std_logic_vector (7 downto 0);
-			P_out_08, P_out_09, P_out_10, P_out_11	: out std_logic_vector (7 downto 0);
-			P_out_12, P_out_13, P_out_14, P_out_15	: out std_logic_vector (7 downto 0));
-end component;
+    component CPU is 
+        port(
+            clk, rst: in std_logic; 
+            from_mem: in std_logic_vector (7 downto 0);
+            writee: out std_logic;
+            to_mem, addr: out std_logic_vector(7 downto 0)
+        );
+    end component;
+     
+    component MEMORIA is 
+        port(
+            CLK, RST, WR: in std_logic;
+            Address: in std_logic_vector (7 downto 0);
+            Data_in: in std_logic_vector (7 downto 0);
+            P_in_00, P_in_01, P_in_02, P_in_03, P_in_04, P_in_05, P_in_06, P_in_07,
+            P_in_08, P_in_09, P_in_10, P_in_11, P_in_12, P_in_13, P_in_14, P_in_15: in std_logic_vector (7 downto 0);
+            Data_out: out std_logic_vector (7 downto 0);
+            P_out_00, P_out_01, P_out_02, P_out_03, P_out_04, P_out_05, P_out_06, P_out_07,
+            P_out_08, P_out_09, P_out_10, P_out_11, P_out_12, P_out_13, P_out_14, P_out_15: out std_logic_vector (7 downto 0)
+        );
+    end component;
 
-signal from_mems, to_mems: std_logic_vector(7 downto 0);
-signal writee: std_logic;
-signal addrs: std_logic_vector (7 downto 0);
+    component BCD_to_7Segment is
+        port(
+            BCD: in std_logic_vector(5 downto 0);
+            Segments: out std_logic_vector(13 downto 0)
+        );
+    end component;
+
+    signal from_mems, to_mems: std_logic_vector(7 downto 0);
+    signal writee: std_logic;
+    signal addrs: std_logic_vector (7 downto 0);
+    signal port_out_15_internal: std_logic_vector(7 downto 0); -- Señal interna para almacenar el valor de port_out_15
+    signal display_value: std_logic_vector(5 downto 0);
 
 begin
-I0: CPU port map(clk, rst, from_mems, writee, to_mems, addrs);
-I1: memORIA port map(clk, rst,writee,addrs, to_mems,port_in_00,port_in_01,port_in_02,port_in_03,port_in_04,port_in_05,port_in_06,port_in_07,port_in_08,port_in_09,port_in_10,port_in_11,port_in_12,port_in_13,port_in_14,port_in_15, from_mems,port_out_00,port_out_01,port_out_02,port_out_03,port_out_04,port_out_05,port_out_06,port_out_07,port_out_08,port_out_09,port_out_10,port_out_11,port_out_12,port_out_13,port_out_14,port_out_15);
+    I0: CPU port map(clk, rst, from_mems, writee, to_mems, addrs);
+    I1: MEMORIA port map(clk, rst, writee, addrs, to_mems, port_in_00, port_in_01, port_in_02, port_in_03, port_in_04, port_in_05, port_in_06, port_in_07, port_in_08, port_in_09, port_in_10, port_in_11, port_in_12, port_in_13, port_in_14, port_in_15, from_mems, port_out_00, port_out_01, port_out_02, port_out_03, port_out_04, port_out_05, port_out_06, port_out_07, port_out_08, port_out_09, port_out_10, port_out_11, port_out_12, port_out_13, port_out_14, port_out_15_internal);
+
+    -- Extrayendo los bits necesarios para mostrar en el display desde la señal interna
+    display_value <= port_out_15_internal(5 downto 0);
+
+    -- Instanciando el decodificador BCD a 7 segmentos
+    I2: BCD_to_7Segment port map(display_value, segments);
+
+    -- Asignar las señales internas a los puertos de salida
+    port_out_15 <= port_out_15_internal;
 
 end arc;
+
+
+
+

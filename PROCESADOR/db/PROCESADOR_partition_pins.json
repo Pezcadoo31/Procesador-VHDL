@@ -516,6 +516,62 @@
 					"strict" : false
 				},
 				{
+					"name" : "segments[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[7]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[8]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[9]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[10]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[11]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[12]",
+					"strict" : false
+				},
+				{
+					"name" : "segments[13]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
