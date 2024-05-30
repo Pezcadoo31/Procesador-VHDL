@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/20/2024 09:33:48"
+-- Generated on "05/28/2024 21:00:00"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          PROCESADOR
 -- 
@@ -67,6 +67,7 @@ SIGNAL port_out_13 : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL port_out_14 : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL port_out_15 : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL rst : STD_LOGIC;
+SIGNAL segments : STD_LOGIC_VECTOR(13 DOWNTO 0);
 COMPONENT PROCESADOR
 	PORT (
 	clk : IN STD_LOGIC;
@@ -86,23 +87,24 @@ COMPONENT PROCESADOR
 	port_in_13 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 	port_in_14 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 	port_in_15 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_00 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_01 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_02 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_03 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_04 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_05 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_06 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_07 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_08 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_09 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_10 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_11 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_12 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_13 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_14 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	port_out_15 : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	rst : IN STD_LOGIC
+	port_out_00 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_01 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_02 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_03 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_04 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_05 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_06 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_07 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_08 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_09 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_10 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_11 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_12 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_13 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_14 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	port_out_15 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	rst : IN STD_LOGIC;
+	segments : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -142,7 +144,8 @@ BEGIN
 	port_out_13 => port_out_13,
 	port_out_14 => port_out_14,
 	port_out_15 => port_out_15,
-	rst => rst
+	rst => rst,
+	segments => segments
 	);
 
 -- clk
@@ -150,9 +153,9 @@ t_prcs_clk: PROCESS
 BEGIN
 LOOP
 	clk <= '0';
-	WAIT FOR 5000 ps;
+	WAIT FOR 50000 ps;
 	clk <= '1';
-	WAIT FOR 5000 ps;
+	WAIT FOR 50000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_clk;
@@ -189,7 +192,7 @@ END PROCESS t_prcs_port_in_00_3;
 -- port_in_00[2]
 t_prcs_port_in_00_2: PROCESS
 BEGIN
-	port_in_00(2) <= '1';
+	port_in_00(2) <= '0';
 WAIT;
 END PROCESS t_prcs_port_in_00_2;
 -- port_in_00[1]
@@ -237,7 +240,7 @@ END PROCESS t_prcs_port_in_01_3;
 -- port_in_01[2]
 t_prcs_port_in_01_2: PROCESS
 BEGIN
-	port_in_01(2) <= '1';
+	port_in_01(2) <= '0';
 WAIT;
 END PROCESS t_prcs_port_in_01_2;
 -- port_in_01[1]
@@ -249,7 +252,7 @@ END PROCESS t_prcs_port_in_01_1;
 -- port_in_01[0]
 t_prcs_port_in_01_0: PROCESS
 BEGIN
-	port_in_01(0) <= '1';
+	port_in_01(0) <= '0';
 WAIT;
 END PROCESS t_prcs_port_in_01_0;
 -- port_in_02[7]

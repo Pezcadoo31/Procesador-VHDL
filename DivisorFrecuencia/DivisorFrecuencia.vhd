@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity DivisorFrecuencia is
+    Port (
+        clk       : in  STD_LOGIC; -- Reloj de entrada
+        reset     : in  STD_LOGIC; -- Señal de reset
+        clk_out   : out STD_LOGIC  -- Reloj de salida
+    );
+end DivisorFrecuencia;
+
+architecture arc of DivisorFrecuencia is
+    signal count : INTEGER := 0;
+    signal temp_clk_out : STD_LOGIC := '0';
+	 signal divisor : INTEGER := 310000;
+begin
+
+    process(clk, reset)
+    begin
+        if reset = '0' then
+            count <= 0;
+            temp_clk_out <= '0';
+        elsif rising_edge(clk) then
+            if count = (divisor - 1) then
+                count <= 0;
+                temp_clk_out <= not temp_clk_out;
+            else
+                count <= count + 1;
+            end if;
+        end if;
+    end process;
+
+    clk_out <= temp_clk_out;
+
+end arc;

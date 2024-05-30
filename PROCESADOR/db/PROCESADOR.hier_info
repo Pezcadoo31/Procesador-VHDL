@@ -1,281 +1,351 @@
 |PROCESADOR
-clk => CPU:I0.clk
-clk => MEMORIA:I1.CLK
-rst => CPU:I0.rst
-rst => MEMORIA:I1.RST
-port_in_00[0] => MEMORIA:I1.P_in_00[0]
-port_in_00[1] => MEMORIA:I1.P_in_00[1]
-port_in_00[2] => MEMORIA:I1.P_in_00[2]
-port_in_00[3] => MEMORIA:I1.P_in_00[3]
-port_in_00[4] => MEMORIA:I1.P_in_00[4]
-port_in_00[5] => MEMORIA:I1.P_in_00[5]
-port_in_00[6] => MEMORIA:I1.P_in_00[6]
-port_in_00[7] => MEMORIA:I1.P_in_00[7]
-port_in_01[0] => MEMORIA:I1.P_in_01[0]
-port_in_01[1] => MEMORIA:I1.P_in_01[1]
-port_in_01[2] => MEMORIA:I1.P_in_01[2]
-port_in_01[3] => MEMORIA:I1.P_in_01[3]
-port_in_01[4] => MEMORIA:I1.P_in_01[4]
-port_in_01[5] => MEMORIA:I1.P_in_01[5]
-port_in_01[6] => MEMORIA:I1.P_in_01[6]
-port_in_01[7] => MEMORIA:I1.P_in_01[7]
-port_in_02[0] => MEMORIA:I1.P_in_02[0]
-port_in_02[1] => MEMORIA:I1.P_in_02[1]
-port_in_02[2] => MEMORIA:I1.P_in_02[2]
-port_in_02[3] => MEMORIA:I1.P_in_02[3]
-port_in_02[4] => MEMORIA:I1.P_in_02[4]
-port_in_02[5] => MEMORIA:I1.P_in_02[5]
-port_in_02[6] => MEMORIA:I1.P_in_02[6]
-port_in_02[7] => MEMORIA:I1.P_in_02[7]
-port_in_03[0] => MEMORIA:I1.P_in_03[0]
-port_in_03[1] => MEMORIA:I1.P_in_03[1]
-port_in_03[2] => MEMORIA:I1.P_in_03[2]
-port_in_03[3] => MEMORIA:I1.P_in_03[3]
-port_in_03[4] => MEMORIA:I1.P_in_03[4]
-port_in_03[5] => MEMORIA:I1.P_in_03[5]
-port_in_03[6] => MEMORIA:I1.P_in_03[6]
-port_in_03[7] => MEMORIA:I1.P_in_03[7]
-port_in_04[0] => MEMORIA:I1.P_in_04[0]
-port_in_04[1] => MEMORIA:I1.P_in_04[1]
-port_in_04[2] => MEMORIA:I1.P_in_04[2]
-port_in_04[3] => MEMORIA:I1.P_in_04[3]
-port_in_04[4] => MEMORIA:I1.P_in_04[4]
-port_in_04[5] => MEMORIA:I1.P_in_04[5]
-port_in_04[6] => MEMORIA:I1.P_in_04[6]
-port_in_04[7] => MEMORIA:I1.P_in_04[7]
-port_in_05[0] => MEMORIA:I1.P_in_05[0]
-port_in_05[1] => MEMORIA:I1.P_in_05[1]
-port_in_05[2] => MEMORIA:I1.P_in_05[2]
-port_in_05[3] => MEMORIA:I1.P_in_05[3]
-port_in_05[4] => MEMORIA:I1.P_in_05[4]
-port_in_05[5] => MEMORIA:I1.P_in_05[5]
-port_in_05[6] => MEMORIA:I1.P_in_05[6]
-port_in_05[7] => MEMORIA:I1.P_in_05[7]
-port_in_06[0] => MEMORIA:I1.P_in_06[0]
-port_in_06[1] => MEMORIA:I1.P_in_06[1]
-port_in_06[2] => MEMORIA:I1.P_in_06[2]
-port_in_06[3] => MEMORIA:I1.P_in_06[3]
-port_in_06[4] => MEMORIA:I1.P_in_06[4]
-port_in_06[5] => MEMORIA:I1.P_in_06[5]
-port_in_06[6] => MEMORIA:I1.P_in_06[6]
-port_in_06[7] => MEMORIA:I1.P_in_06[7]
-port_in_07[0] => MEMORIA:I1.P_in_07[0]
-port_in_07[1] => MEMORIA:I1.P_in_07[1]
-port_in_07[2] => MEMORIA:I1.P_in_07[2]
-port_in_07[3] => MEMORIA:I1.P_in_07[3]
-port_in_07[4] => MEMORIA:I1.P_in_07[4]
-port_in_07[5] => MEMORIA:I1.P_in_07[5]
-port_in_07[6] => MEMORIA:I1.P_in_07[6]
-port_in_07[7] => MEMORIA:I1.P_in_07[7]
-port_in_08[0] => MEMORIA:I1.P_in_08[0]
-port_in_08[1] => MEMORIA:I1.P_in_08[1]
-port_in_08[2] => MEMORIA:I1.P_in_08[2]
-port_in_08[3] => MEMORIA:I1.P_in_08[3]
-port_in_08[4] => MEMORIA:I1.P_in_08[4]
-port_in_08[5] => MEMORIA:I1.P_in_08[5]
-port_in_08[6] => MEMORIA:I1.P_in_08[6]
-port_in_08[7] => MEMORIA:I1.P_in_08[7]
-port_in_09[0] => MEMORIA:I1.P_in_09[0]
-port_in_09[1] => MEMORIA:I1.P_in_09[1]
-port_in_09[2] => MEMORIA:I1.P_in_09[2]
-port_in_09[3] => MEMORIA:I1.P_in_09[3]
-port_in_09[4] => MEMORIA:I1.P_in_09[4]
-port_in_09[5] => MEMORIA:I1.P_in_09[5]
-port_in_09[6] => MEMORIA:I1.P_in_09[6]
-port_in_09[7] => MEMORIA:I1.P_in_09[7]
-port_in_10[0] => MEMORIA:I1.P_in_10[0]
-port_in_10[1] => MEMORIA:I1.P_in_10[1]
-port_in_10[2] => MEMORIA:I1.P_in_10[2]
-port_in_10[3] => MEMORIA:I1.P_in_10[3]
-port_in_10[4] => MEMORIA:I1.P_in_10[4]
-port_in_10[5] => MEMORIA:I1.P_in_10[5]
-port_in_10[6] => MEMORIA:I1.P_in_10[6]
-port_in_10[7] => MEMORIA:I1.P_in_10[7]
-port_in_11[0] => MEMORIA:I1.P_in_11[0]
-port_in_11[1] => MEMORIA:I1.P_in_11[1]
-port_in_11[2] => MEMORIA:I1.P_in_11[2]
-port_in_11[3] => MEMORIA:I1.P_in_11[3]
-port_in_11[4] => MEMORIA:I1.P_in_11[4]
-port_in_11[5] => MEMORIA:I1.P_in_11[5]
-port_in_11[6] => MEMORIA:I1.P_in_11[6]
-port_in_11[7] => MEMORIA:I1.P_in_11[7]
-port_in_12[0] => MEMORIA:I1.P_in_12[0]
-port_in_12[1] => MEMORIA:I1.P_in_12[1]
-port_in_12[2] => MEMORIA:I1.P_in_12[2]
-port_in_12[3] => MEMORIA:I1.P_in_12[3]
-port_in_12[4] => MEMORIA:I1.P_in_12[4]
-port_in_12[5] => MEMORIA:I1.P_in_12[5]
-port_in_12[6] => MEMORIA:I1.P_in_12[6]
-port_in_12[7] => MEMORIA:I1.P_in_12[7]
-port_in_13[0] => MEMORIA:I1.P_in_13[0]
-port_in_13[1] => MEMORIA:I1.P_in_13[1]
-port_in_13[2] => MEMORIA:I1.P_in_13[2]
-port_in_13[3] => MEMORIA:I1.P_in_13[3]
-port_in_13[4] => MEMORIA:I1.P_in_13[4]
-port_in_13[5] => MEMORIA:I1.P_in_13[5]
-port_in_13[6] => MEMORIA:I1.P_in_13[6]
-port_in_13[7] => MEMORIA:I1.P_in_13[7]
-port_in_14[0] => MEMORIA:I1.P_in_14[0]
-port_in_14[1] => MEMORIA:I1.P_in_14[1]
-port_in_14[2] => MEMORIA:I1.P_in_14[2]
-port_in_14[3] => MEMORIA:I1.P_in_14[3]
-port_in_14[4] => MEMORIA:I1.P_in_14[4]
-port_in_14[5] => MEMORIA:I1.P_in_14[5]
-port_in_14[6] => MEMORIA:I1.P_in_14[6]
-port_in_14[7] => MEMORIA:I1.P_in_14[7]
-port_in_15[0] => MEMORIA:I1.P_in_15[0]
-port_in_15[1] => MEMORIA:I1.P_in_15[1]
-port_in_15[2] => MEMORIA:I1.P_in_15[2]
-port_in_15[3] => MEMORIA:I1.P_in_15[3]
-port_in_15[4] => MEMORIA:I1.P_in_15[4]
-port_in_15[5] => MEMORIA:I1.P_in_15[5]
-port_in_15[6] => MEMORIA:I1.P_in_15[6]
-port_in_15[7] => MEMORIA:I1.P_in_15[7]
-port_out_00[0] << MEMORIA:I1.P_out_00[0]
-port_out_00[1] << MEMORIA:I1.P_out_00[1]
-port_out_00[2] << MEMORIA:I1.P_out_00[2]
-port_out_00[3] << MEMORIA:I1.P_out_00[3]
-port_out_00[4] << MEMORIA:I1.P_out_00[4]
-port_out_00[5] << MEMORIA:I1.P_out_00[5]
-port_out_00[6] << MEMORIA:I1.P_out_00[6]
-port_out_00[7] << MEMORIA:I1.P_out_00[7]
-port_out_01[0] << MEMORIA:I1.P_out_01[0]
-port_out_01[1] << MEMORIA:I1.P_out_01[1]
-port_out_01[2] << MEMORIA:I1.P_out_01[2]
-port_out_01[3] << MEMORIA:I1.P_out_01[3]
-port_out_01[4] << MEMORIA:I1.P_out_01[4]
-port_out_01[5] << MEMORIA:I1.P_out_01[5]
-port_out_01[6] << MEMORIA:I1.P_out_01[6]
-port_out_01[7] << MEMORIA:I1.P_out_01[7]
-port_out_02[0] << MEMORIA:I1.P_out_02[0]
-port_out_02[1] << MEMORIA:I1.P_out_02[1]
-port_out_02[2] << MEMORIA:I1.P_out_02[2]
-port_out_02[3] << MEMORIA:I1.P_out_02[3]
-port_out_02[4] << MEMORIA:I1.P_out_02[4]
-port_out_02[5] << MEMORIA:I1.P_out_02[5]
-port_out_02[6] << MEMORIA:I1.P_out_02[6]
-port_out_02[7] << MEMORIA:I1.P_out_02[7]
-port_out_03[0] << MEMORIA:I1.P_out_03[0]
-port_out_03[1] << MEMORIA:I1.P_out_03[1]
-port_out_03[2] << MEMORIA:I1.P_out_03[2]
-port_out_03[3] << MEMORIA:I1.P_out_03[3]
-port_out_03[4] << MEMORIA:I1.P_out_03[4]
-port_out_03[5] << MEMORIA:I1.P_out_03[5]
-port_out_03[6] << MEMORIA:I1.P_out_03[6]
-port_out_03[7] << MEMORIA:I1.P_out_03[7]
-port_out_04[0] << MEMORIA:I1.P_out_04[0]
-port_out_04[1] << MEMORIA:I1.P_out_04[1]
-port_out_04[2] << MEMORIA:I1.P_out_04[2]
-port_out_04[3] << MEMORIA:I1.P_out_04[3]
-port_out_04[4] << MEMORIA:I1.P_out_04[4]
-port_out_04[5] << MEMORIA:I1.P_out_04[5]
-port_out_04[6] << MEMORIA:I1.P_out_04[6]
-port_out_04[7] << MEMORIA:I1.P_out_04[7]
-port_out_05[0] << MEMORIA:I1.P_out_05[0]
-port_out_05[1] << MEMORIA:I1.P_out_05[1]
-port_out_05[2] << MEMORIA:I1.P_out_05[2]
-port_out_05[3] << MEMORIA:I1.P_out_05[3]
-port_out_05[4] << MEMORIA:I1.P_out_05[4]
-port_out_05[5] << MEMORIA:I1.P_out_05[5]
-port_out_05[6] << MEMORIA:I1.P_out_05[6]
-port_out_05[7] << MEMORIA:I1.P_out_05[7]
-port_out_06[0] << MEMORIA:I1.P_out_06[0]
-port_out_06[1] << MEMORIA:I1.P_out_06[1]
-port_out_06[2] << MEMORIA:I1.P_out_06[2]
-port_out_06[3] << MEMORIA:I1.P_out_06[3]
-port_out_06[4] << MEMORIA:I1.P_out_06[4]
-port_out_06[5] << MEMORIA:I1.P_out_06[5]
-port_out_06[6] << MEMORIA:I1.P_out_06[6]
-port_out_06[7] << MEMORIA:I1.P_out_06[7]
-port_out_07[0] << MEMORIA:I1.P_out_07[0]
-port_out_07[1] << MEMORIA:I1.P_out_07[1]
-port_out_07[2] << MEMORIA:I1.P_out_07[2]
-port_out_07[3] << MEMORIA:I1.P_out_07[3]
-port_out_07[4] << MEMORIA:I1.P_out_07[4]
-port_out_07[5] << MEMORIA:I1.P_out_07[5]
-port_out_07[6] << MEMORIA:I1.P_out_07[6]
-port_out_07[7] << MEMORIA:I1.P_out_07[7]
-port_out_08[0] << MEMORIA:I1.P_out_08[0]
-port_out_08[1] << MEMORIA:I1.P_out_08[1]
-port_out_08[2] << MEMORIA:I1.P_out_08[2]
-port_out_08[3] << MEMORIA:I1.P_out_08[3]
-port_out_08[4] << MEMORIA:I1.P_out_08[4]
-port_out_08[5] << MEMORIA:I1.P_out_08[5]
-port_out_08[6] << MEMORIA:I1.P_out_08[6]
-port_out_08[7] << MEMORIA:I1.P_out_08[7]
-port_out_09[0] << MEMORIA:I1.P_out_09[0]
-port_out_09[1] << MEMORIA:I1.P_out_09[1]
-port_out_09[2] << MEMORIA:I1.P_out_09[2]
-port_out_09[3] << MEMORIA:I1.P_out_09[3]
-port_out_09[4] << MEMORIA:I1.P_out_09[4]
-port_out_09[5] << MEMORIA:I1.P_out_09[5]
-port_out_09[6] << MEMORIA:I1.P_out_09[6]
-port_out_09[7] << MEMORIA:I1.P_out_09[7]
-port_out_10[0] << MEMORIA:I1.P_out_10[0]
-port_out_10[1] << MEMORIA:I1.P_out_10[1]
-port_out_10[2] << MEMORIA:I1.P_out_10[2]
-port_out_10[3] << MEMORIA:I1.P_out_10[3]
-port_out_10[4] << MEMORIA:I1.P_out_10[4]
-port_out_10[5] << MEMORIA:I1.P_out_10[5]
-port_out_10[6] << MEMORIA:I1.P_out_10[6]
-port_out_10[7] << MEMORIA:I1.P_out_10[7]
-port_out_11[0] << MEMORIA:I1.P_out_11[0]
-port_out_11[1] << MEMORIA:I1.P_out_11[1]
-port_out_11[2] << MEMORIA:I1.P_out_11[2]
-port_out_11[3] << MEMORIA:I1.P_out_11[3]
-port_out_11[4] << MEMORIA:I1.P_out_11[4]
-port_out_11[5] << MEMORIA:I1.P_out_11[5]
-port_out_11[6] << MEMORIA:I1.P_out_11[6]
-port_out_11[7] << MEMORIA:I1.P_out_11[7]
-port_out_12[0] << MEMORIA:I1.P_out_12[0]
-port_out_12[1] << MEMORIA:I1.P_out_12[1]
-port_out_12[2] << MEMORIA:I1.P_out_12[2]
-port_out_12[3] << MEMORIA:I1.P_out_12[3]
-port_out_12[4] << MEMORIA:I1.P_out_12[4]
-port_out_12[5] << MEMORIA:I1.P_out_12[5]
-port_out_12[6] << MEMORIA:I1.P_out_12[6]
-port_out_12[7] << MEMORIA:I1.P_out_12[7]
-port_out_13[0] << MEMORIA:I1.P_out_13[0]
-port_out_13[1] << MEMORIA:I1.P_out_13[1]
-port_out_13[2] << MEMORIA:I1.P_out_13[2]
-port_out_13[3] << MEMORIA:I1.P_out_13[3]
-port_out_13[4] << MEMORIA:I1.P_out_13[4]
-port_out_13[5] << MEMORIA:I1.P_out_13[5]
-port_out_13[6] << MEMORIA:I1.P_out_13[6]
-port_out_13[7] << MEMORIA:I1.P_out_13[7]
-port_out_14[0] << MEMORIA:I1.P_out_14[0]
-port_out_14[1] << MEMORIA:I1.P_out_14[1]
-port_out_14[2] << MEMORIA:I1.P_out_14[2]
-port_out_14[3] << MEMORIA:I1.P_out_14[3]
-port_out_14[4] << MEMORIA:I1.P_out_14[4]
-port_out_14[5] << MEMORIA:I1.P_out_14[5]
-port_out_14[6] << MEMORIA:I1.P_out_14[6]
-port_out_14[7] << MEMORIA:I1.P_out_14[7]
-port_out_15[0] << MEMORIA:I1.P_out_15[0]
-port_out_15[1] << MEMORIA:I1.P_out_15[1]
-port_out_15[2] << MEMORIA:I1.P_out_15[2]
-port_out_15[3] << MEMORIA:I1.P_out_15[3]
-port_out_15[4] << MEMORIA:I1.P_out_15[4]
-port_out_15[5] << MEMORIA:I1.P_out_15[5]
-port_out_15[6] << MEMORIA:I1.P_out_15[6]
-port_out_15[7] << MEMORIA:I1.P_out_15[7]
-segments[0] << BCD_to_7Segment:I2.Segments[0]
-segments[1] << BCD_to_7Segment:I2.Segments[1]
-segments[2] << BCD_to_7Segment:I2.Segments[2]
-segments[3] << BCD_to_7Segment:I2.Segments[3]
-segments[4] << BCD_to_7Segment:I2.Segments[4]
-segments[5] << BCD_to_7Segment:I2.Segments[5]
-segments[6] << BCD_to_7Segment:I2.Segments[6]
-segments[7] << BCD_to_7Segment:I2.Segments[7]
-segments[8] << BCD_to_7Segment:I2.Segments[8]
-segments[9] << BCD_to_7Segment:I2.Segments[9]
-segments[10] << BCD_to_7Segment:I2.Segments[10]
-segments[11] << BCD_to_7Segment:I2.Segments[11]
-segments[12] << BCD_to_7Segment:I2.Segments[12]
-segments[13] << BCD_to_7Segment:I2.Segments[13]
+clk => DivisorFrecuencia:I0.clk
+rst => DivisorFrecuencia:I0.reset
+rst => CPU:I1.rst
+rst => MEMORIA:I2.RST
+port_in_00[0] => MEMORIA:I2.P_in_00[0]
+port_in_00[1] => MEMORIA:I2.P_in_00[1]
+port_in_00[2] => MEMORIA:I2.P_in_00[2]
+port_in_00[3] => MEMORIA:I2.P_in_00[3]
+port_in_00[4] => MEMORIA:I2.P_in_00[4]
+port_in_00[5] => MEMORIA:I2.P_in_00[5]
+port_in_00[6] => MEMORIA:I2.P_in_00[6]
+port_in_00[7] => MEMORIA:I2.P_in_00[7]
+port_in_01[0] => MEMORIA:I2.P_in_01[0]
+port_in_01[1] => MEMORIA:I2.P_in_01[1]
+port_in_01[2] => MEMORIA:I2.P_in_01[2]
+port_in_01[3] => MEMORIA:I2.P_in_01[3]
+port_in_01[4] => MEMORIA:I2.P_in_01[4]
+port_in_01[5] => MEMORIA:I2.P_in_01[5]
+port_in_01[6] => MEMORIA:I2.P_in_01[6]
+port_in_01[7] => MEMORIA:I2.P_in_01[7]
+port_in_02[0] => MEMORIA:I2.P_in_02[0]
+port_in_02[1] => MEMORIA:I2.P_in_02[1]
+port_in_02[2] => MEMORIA:I2.P_in_02[2]
+port_in_02[3] => MEMORIA:I2.P_in_02[3]
+port_in_02[4] => MEMORIA:I2.P_in_02[4]
+port_in_02[5] => MEMORIA:I2.P_in_02[5]
+port_in_02[6] => MEMORIA:I2.P_in_02[6]
+port_in_02[7] => MEMORIA:I2.P_in_02[7]
+port_in_03[0] => MEMORIA:I2.P_in_03[0]
+port_in_03[1] => MEMORIA:I2.P_in_03[1]
+port_in_03[2] => MEMORIA:I2.P_in_03[2]
+port_in_03[3] => MEMORIA:I2.P_in_03[3]
+port_in_03[4] => MEMORIA:I2.P_in_03[4]
+port_in_03[5] => MEMORIA:I2.P_in_03[5]
+port_in_03[6] => MEMORIA:I2.P_in_03[6]
+port_in_03[7] => MEMORIA:I2.P_in_03[7]
+port_in_04[0] => MEMORIA:I2.P_in_04[0]
+port_in_04[1] => MEMORIA:I2.P_in_04[1]
+port_in_04[2] => MEMORIA:I2.P_in_04[2]
+port_in_04[3] => MEMORIA:I2.P_in_04[3]
+port_in_04[4] => MEMORIA:I2.P_in_04[4]
+port_in_04[5] => MEMORIA:I2.P_in_04[5]
+port_in_04[6] => MEMORIA:I2.P_in_04[6]
+port_in_04[7] => MEMORIA:I2.P_in_04[7]
+port_in_05[0] => MEMORIA:I2.P_in_05[0]
+port_in_05[1] => MEMORIA:I2.P_in_05[1]
+port_in_05[2] => MEMORIA:I2.P_in_05[2]
+port_in_05[3] => MEMORIA:I2.P_in_05[3]
+port_in_05[4] => MEMORIA:I2.P_in_05[4]
+port_in_05[5] => MEMORIA:I2.P_in_05[5]
+port_in_05[6] => MEMORIA:I2.P_in_05[6]
+port_in_05[7] => MEMORIA:I2.P_in_05[7]
+port_in_06[0] => MEMORIA:I2.P_in_06[0]
+port_in_06[1] => MEMORIA:I2.P_in_06[1]
+port_in_06[2] => MEMORIA:I2.P_in_06[2]
+port_in_06[3] => MEMORIA:I2.P_in_06[3]
+port_in_06[4] => MEMORIA:I2.P_in_06[4]
+port_in_06[5] => MEMORIA:I2.P_in_06[5]
+port_in_06[6] => MEMORIA:I2.P_in_06[6]
+port_in_06[7] => MEMORIA:I2.P_in_06[7]
+port_in_07[0] => MEMORIA:I2.P_in_07[0]
+port_in_07[1] => MEMORIA:I2.P_in_07[1]
+port_in_07[2] => MEMORIA:I2.P_in_07[2]
+port_in_07[3] => MEMORIA:I2.P_in_07[3]
+port_in_07[4] => MEMORIA:I2.P_in_07[4]
+port_in_07[5] => MEMORIA:I2.P_in_07[5]
+port_in_07[6] => MEMORIA:I2.P_in_07[6]
+port_in_07[7] => MEMORIA:I2.P_in_07[7]
+port_in_08[0] => MEMORIA:I2.P_in_08[0]
+port_in_08[1] => MEMORIA:I2.P_in_08[1]
+port_in_08[2] => MEMORIA:I2.P_in_08[2]
+port_in_08[3] => MEMORIA:I2.P_in_08[3]
+port_in_08[4] => MEMORIA:I2.P_in_08[4]
+port_in_08[5] => MEMORIA:I2.P_in_08[5]
+port_in_08[6] => MEMORIA:I2.P_in_08[6]
+port_in_08[7] => MEMORIA:I2.P_in_08[7]
+port_in_09[0] => MEMORIA:I2.P_in_09[0]
+port_in_09[1] => MEMORIA:I2.P_in_09[1]
+port_in_09[2] => MEMORIA:I2.P_in_09[2]
+port_in_09[3] => MEMORIA:I2.P_in_09[3]
+port_in_09[4] => MEMORIA:I2.P_in_09[4]
+port_in_09[5] => MEMORIA:I2.P_in_09[5]
+port_in_09[6] => MEMORIA:I2.P_in_09[6]
+port_in_09[7] => MEMORIA:I2.P_in_09[7]
+port_in_10[0] => MEMORIA:I2.P_in_10[0]
+port_in_10[1] => MEMORIA:I2.P_in_10[1]
+port_in_10[2] => MEMORIA:I2.P_in_10[2]
+port_in_10[3] => MEMORIA:I2.P_in_10[3]
+port_in_10[4] => MEMORIA:I2.P_in_10[4]
+port_in_10[5] => MEMORIA:I2.P_in_10[5]
+port_in_10[6] => MEMORIA:I2.P_in_10[6]
+port_in_10[7] => MEMORIA:I2.P_in_10[7]
+port_in_11[0] => MEMORIA:I2.P_in_11[0]
+port_in_11[1] => MEMORIA:I2.P_in_11[1]
+port_in_11[2] => MEMORIA:I2.P_in_11[2]
+port_in_11[3] => MEMORIA:I2.P_in_11[3]
+port_in_11[4] => MEMORIA:I2.P_in_11[4]
+port_in_11[5] => MEMORIA:I2.P_in_11[5]
+port_in_11[6] => MEMORIA:I2.P_in_11[6]
+port_in_11[7] => MEMORIA:I2.P_in_11[7]
+port_in_12[0] => MEMORIA:I2.P_in_12[0]
+port_in_12[1] => MEMORIA:I2.P_in_12[1]
+port_in_12[2] => MEMORIA:I2.P_in_12[2]
+port_in_12[3] => MEMORIA:I2.P_in_12[3]
+port_in_12[4] => MEMORIA:I2.P_in_12[4]
+port_in_12[5] => MEMORIA:I2.P_in_12[5]
+port_in_12[6] => MEMORIA:I2.P_in_12[6]
+port_in_12[7] => MEMORIA:I2.P_in_12[7]
+port_in_13[0] => MEMORIA:I2.P_in_13[0]
+port_in_13[1] => MEMORIA:I2.P_in_13[1]
+port_in_13[2] => MEMORIA:I2.P_in_13[2]
+port_in_13[3] => MEMORIA:I2.P_in_13[3]
+port_in_13[4] => MEMORIA:I2.P_in_13[4]
+port_in_13[5] => MEMORIA:I2.P_in_13[5]
+port_in_13[6] => MEMORIA:I2.P_in_13[6]
+port_in_13[7] => MEMORIA:I2.P_in_13[7]
+port_in_14[0] => MEMORIA:I2.P_in_14[0]
+port_in_14[1] => MEMORIA:I2.P_in_14[1]
+port_in_14[2] => MEMORIA:I2.P_in_14[2]
+port_in_14[3] => MEMORIA:I2.P_in_14[3]
+port_in_14[4] => MEMORIA:I2.P_in_14[4]
+port_in_14[5] => MEMORIA:I2.P_in_14[5]
+port_in_14[6] => MEMORIA:I2.P_in_14[6]
+port_in_14[7] => MEMORIA:I2.P_in_14[7]
+port_in_15[0] => MEMORIA:I2.P_in_15[0]
+port_in_15[1] => MEMORIA:I2.P_in_15[1]
+port_in_15[2] => MEMORIA:I2.P_in_15[2]
+port_in_15[3] => MEMORIA:I2.P_in_15[3]
+port_in_15[4] => MEMORIA:I2.P_in_15[4]
+port_in_15[5] => MEMORIA:I2.P_in_15[5]
+port_in_15[6] => MEMORIA:I2.P_in_15[6]
+port_in_15[7] => MEMORIA:I2.P_in_15[7]
+port_out_00[0] << MEMORIA:I2.P_out_00[0]
+port_out_00[1] << MEMORIA:I2.P_out_00[1]
+port_out_00[2] << MEMORIA:I2.P_out_00[2]
+port_out_00[3] << MEMORIA:I2.P_out_00[3]
+port_out_00[4] << MEMORIA:I2.P_out_00[4]
+port_out_00[5] << MEMORIA:I2.P_out_00[5]
+port_out_00[6] << MEMORIA:I2.P_out_00[6]
+port_out_00[7] << MEMORIA:I2.P_out_00[7]
+port_out_01[0] << MEMORIA:I2.P_out_01[0]
+port_out_01[1] << MEMORIA:I2.P_out_01[1]
+port_out_01[2] << MEMORIA:I2.P_out_01[2]
+port_out_01[3] << MEMORIA:I2.P_out_01[3]
+port_out_01[4] << MEMORIA:I2.P_out_01[4]
+port_out_01[5] << MEMORIA:I2.P_out_01[5]
+port_out_01[6] << MEMORIA:I2.P_out_01[6]
+port_out_01[7] << MEMORIA:I2.P_out_01[7]
+port_out_02[0] << MEMORIA:I2.P_out_02[0]
+port_out_02[1] << MEMORIA:I2.P_out_02[1]
+port_out_02[2] << MEMORIA:I2.P_out_02[2]
+port_out_02[3] << MEMORIA:I2.P_out_02[3]
+port_out_02[4] << MEMORIA:I2.P_out_02[4]
+port_out_02[5] << MEMORIA:I2.P_out_02[5]
+port_out_02[6] << MEMORIA:I2.P_out_02[6]
+port_out_02[7] << MEMORIA:I2.P_out_02[7]
+port_out_03[0] << MEMORIA:I2.P_out_03[0]
+port_out_03[1] << MEMORIA:I2.P_out_03[1]
+port_out_03[2] << MEMORIA:I2.P_out_03[2]
+port_out_03[3] << MEMORIA:I2.P_out_03[3]
+port_out_03[4] << MEMORIA:I2.P_out_03[4]
+port_out_03[5] << MEMORIA:I2.P_out_03[5]
+port_out_03[6] << MEMORIA:I2.P_out_03[6]
+port_out_03[7] << MEMORIA:I2.P_out_03[7]
+port_out_04[0] << MEMORIA:I2.P_out_04[0]
+port_out_04[1] << MEMORIA:I2.P_out_04[1]
+port_out_04[2] << MEMORIA:I2.P_out_04[2]
+port_out_04[3] << MEMORIA:I2.P_out_04[3]
+port_out_04[4] << MEMORIA:I2.P_out_04[4]
+port_out_04[5] << MEMORIA:I2.P_out_04[5]
+port_out_04[6] << MEMORIA:I2.P_out_04[6]
+port_out_04[7] << MEMORIA:I2.P_out_04[7]
+port_out_05[0] << MEMORIA:I2.P_out_05[0]
+port_out_05[1] << MEMORIA:I2.P_out_05[1]
+port_out_05[2] << MEMORIA:I2.P_out_05[2]
+port_out_05[3] << MEMORIA:I2.P_out_05[3]
+port_out_05[4] << MEMORIA:I2.P_out_05[4]
+port_out_05[5] << MEMORIA:I2.P_out_05[5]
+port_out_05[6] << MEMORIA:I2.P_out_05[6]
+port_out_05[7] << MEMORIA:I2.P_out_05[7]
+port_out_06[0] << MEMORIA:I2.P_out_06[0]
+port_out_06[1] << MEMORIA:I2.P_out_06[1]
+port_out_06[2] << MEMORIA:I2.P_out_06[2]
+port_out_06[3] << MEMORIA:I2.P_out_06[3]
+port_out_06[4] << MEMORIA:I2.P_out_06[4]
+port_out_06[5] << MEMORIA:I2.P_out_06[5]
+port_out_06[6] << MEMORIA:I2.P_out_06[6]
+port_out_06[7] << MEMORIA:I2.P_out_06[7]
+port_out_07[0] << MEMORIA:I2.P_out_07[0]
+port_out_07[1] << MEMORIA:I2.P_out_07[1]
+port_out_07[2] << MEMORIA:I2.P_out_07[2]
+port_out_07[3] << MEMORIA:I2.P_out_07[3]
+port_out_07[4] << MEMORIA:I2.P_out_07[4]
+port_out_07[5] << MEMORIA:I2.P_out_07[5]
+port_out_07[6] << MEMORIA:I2.P_out_07[6]
+port_out_07[7] << MEMORIA:I2.P_out_07[7]
+port_out_08[0] << MEMORIA:I2.P_out_08[0]
+port_out_08[1] << MEMORIA:I2.P_out_08[1]
+port_out_08[2] << MEMORIA:I2.P_out_08[2]
+port_out_08[3] << MEMORIA:I2.P_out_08[3]
+port_out_08[4] << MEMORIA:I2.P_out_08[4]
+port_out_08[5] << MEMORIA:I2.P_out_08[5]
+port_out_08[6] << MEMORIA:I2.P_out_08[6]
+port_out_08[7] << MEMORIA:I2.P_out_08[7]
+port_out_09[0] << MEMORIA:I2.P_out_09[0]
+port_out_09[1] << MEMORIA:I2.P_out_09[1]
+port_out_09[2] << MEMORIA:I2.P_out_09[2]
+port_out_09[3] << MEMORIA:I2.P_out_09[3]
+port_out_09[4] << MEMORIA:I2.P_out_09[4]
+port_out_09[5] << MEMORIA:I2.P_out_09[5]
+port_out_09[6] << MEMORIA:I2.P_out_09[6]
+port_out_09[7] << MEMORIA:I2.P_out_09[7]
+port_out_10[0] << MEMORIA:I2.P_out_10[0]
+port_out_10[1] << MEMORIA:I2.P_out_10[1]
+port_out_10[2] << MEMORIA:I2.P_out_10[2]
+port_out_10[3] << MEMORIA:I2.P_out_10[3]
+port_out_10[4] << MEMORIA:I2.P_out_10[4]
+port_out_10[5] << MEMORIA:I2.P_out_10[5]
+port_out_10[6] << MEMORIA:I2.P_out_10[6]
+port_out_10[7] << MEMORIA:I2.P_out_10[7]
+port_out_11[0] << MEMORIA:I2.P_out_11[0]
+port_out_11[1] << MEMORIA:I2.P_out_11[1]
+port_out_11[2] << MEMORIA:I2.P_out_11[2]
+port_out_11[3] << MEMORIA:I2.P_out_11[3]
+port_out_11[4] << MEMORIA:I2.P_out_11[4]
+port_out_11[5] << MEMORIA:I2.P_out_11[5]
+port_out_11[6] << MEMORIA:I2.P_out_11[6]
+port_out_11[7] << MEMORIA:I2.P_out_11[7]
+port_out_12[0] << MEMORIA:I2.P_out_12[0]
+port_out_12[1] << MEMORIA:I2.P_out_12[1]
+port_out_12[2] << MEMORIA:I2.P_out_12[2]
+port_out_12[3] << MEMORIA:I2.P_out_12[3]
+port_out_12[4] << MEMORIA:I2.P_out_12[4]
+port_out_12[5] << MEMORIA:I2.P_out_12[5]
+port_out_12[6] << MEMORIA:I2.P_out_12[6]
+port_out_12[7] << MEMORIA:I2.P_out_12[7]
+port_out_13[0] << MEMORIA:I2.P_out_13[0]
+port_out_13[1] << MEMORIA:I2.P_out_13[1]
+port_out_13[2] << MEMORIA:I2.P_out_13[2]
+port_out_13[3] << MEMORIA:I2.P_out_13[3]
+port_out_13[4] << MEMORIA:I2.P_out_13[4]
+port_out_13[5] << MEMORIA:I2.P_out_13[5]
+port_out_13[6] << MEMORIA:I2.P_out_13[6]
+port_out_13[7] << MEMORIA:I2.P_out_13[7]
+port_out_14[0] << MEMORIA:I2.P_out_14[0]
+port_out_14[1] << MEMORIA:I2.P_out_14[1]
+port_out_14[2] << MEMORIA:I2.P_out_14[2]
+port_out_14[3] << MEMORIA:I2.P_out_14[3]
+port_out_14[4] << MEMORIA:I2.P_out_14[4]
+port_out_14[5] << MEMORIA:I2.P_out_14[5]
+port_out_14[6] << MEMORIA:I2.P_out_14[6]
+port_out_14[7] << MEMORIA:I2.P_out_14[7]
+port_out_15[0] << MEMORIA:I2.P_out_15[0]
+port_out_15[1] << MEMORIA:I2.P_out_15[1]
+port_out_15[2] << MEMORIA:I2.P_out_15[2]
+port_out_15[3] << MEMORIA:I2.P_out_15[3]
+port_out_15[4] << MEMORIA:I2.P_out_15[4]
+port_out_15[5] << MEMORIA:I2.P_out_15[5]
+port_out_15[6] << MEMORIA:I2.P_out_15[6]
+port_out_15[7] << MEMORIA:I2.P_out_15[7]
+segments[0] << BCD_to_7Segment:I3.Segments[0]
+segments[1] << BCD_to_7Segment:I3.Segments[1]
+segments[2] << BCD_to_7Segment:I3.Segments[2]
+segments[3] << BCD_to_7Segment:I3.Segments[3]
+segments[4] << BCD_to_7Segment:I3.Segments[4]
+segments[5] << BCD_to_7Segment:I3.Segments[5]
+segments[6] << BCD_to_7Segment:I3.Segments[6]
+segments[7] << BCD_to_7Segment:I3.Segments[7]
+segments[8] << BCD_to_7Segment:I3.Segments[8]
+segments[9] << BCD_to_7Segment:I3.Segments[9]
+segments[10] << BCD_to_7Segment:I3.Segments[10]
+segments[11] << BCD_to_7Segment:I3.Segments[11]
+segments[12] << BCD_to_7Segment:I3.Segments[12]
+segments[13] << BCD_to_7Segment:I3.Segments[13]
 
 
-|PROCESADOR|CPU:I0
+|PROCESADOR|DivisorFrecuencia:I0
+clk => temp_clk_out.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+reset => temp_clk_out.ACLR
+reset => count[0].ACLR
+reset => count[1].ACLR
+reset => count[2].ACLR
+reset => count[3].ACLR
+reset => count[4].ACLR
+reset => count[5].ACLR
+reset => count[6].ACLR
+reset => count[7].ACLR
+reset => count[8].ACLR
+reset => count[9].ACLR
+reset => count[10].ACLR
+reset => count[11].ACLR
+reset => count[12].ACLR
+reset => count[13].ACLR
+reset => count[14].ACLR
+reset => count[15].ACLR
+reset => count[16].ACLR
+reset => count[17].ACLR
+reset => count[18].ACLR
+reset => count[19].ACLR
+reset => count[20].ACLR
+reset => count[21].ACLR
+reset => count[22].ACLR
+reset => count[23].ACLR
+reset => count[24].ACLR
+reset => count[25].ACLR
+reset => count[26].ACLR
+reset => count[27].ACLR
+reset => count[28].ACLR
+reset => count[29].ACLR
+reset => count[30].ACLR
+reset => count[31].ACLR
+clk_out <= temp_clk_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PROCESADOR|CPU:I1
 clk => DATA_PATH:I0.CLK
 clk => ME:I1.clk
 rst => DATA_PATH:I0.RST
@@ -307,7 +377,7 @@ addr[6] <= DATA_PATH:I0.address[6]
 addr[7] <= DATA_PATH:I0.address[7]
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0
 CLK => CCR[0].CLK
 CLK => CCR[1].CLK
 CLK => CCR[2].CLK
@@ -526,7 +596,7 @@ CCR_Result[2] <= CCR[2].DB_MAX_OUTPUT_PORT_TYPE
 CCR_Result[3] <= CCR[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT
 A[0] => BIT_SLICE:I1.A
 A[1] => BIT_SLICE:I2.A
 A[2] => BIT_SLICE:I3.A
@@ -625,7 +695,7 @@ Ban[2] <= Ban.DB_MAX_OUTPUT_PORT_TYPE
 Ban[3] <= BIT_SLICE:I8.C
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1
 A => XOR1.IN0
 B => XOR2.IN0
 NA => XOR1.IN1
@@ -644,7 +714,7 @@ C <= C.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1|ha:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1|ha:I0
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -653,7 +723,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1|ha:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I1|ha:I1
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -662,7 +732,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2
 A => XOR1.IN0
 B => XOR2.IN0
 NA => XOR1.IN1
@@ -681,7 +751,7 @@ C <= C.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2|ha:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2|ha:I0
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -690,7 +760,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2|ha:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I2|ha:I1
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -699,7 +769,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3
 A => XOR1.IN0
 B => XOR2.IN0
 NA => XOR1.IN1
@@ -718,7 +788,7 @@ C <= C.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3|ha:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3|ha:I0
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -727,7 +797,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3|ha:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I3|ha:I1
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -736,7 +806,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I4
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I4
 A => XOR1.IN0
 B => XOR2.IN0
 NA => XOR1.IN1
@@ -755,7 +825,7 @@ C <= C.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I4|ha:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I4|ha:I0
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -764,7 +834,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I4|ha:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I4|ha:I1
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -773,7 +843,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5
 A => XOR1.IN0
 B => XOR2.IN0
 NA => XOR1.IN1
@@ -792,7 +862,7 @@ C <= C.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5|ha:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5|ha:I0
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -801,7 +871,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5|ha:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I5|ha:I1
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -810,7 +880,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I6
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I6
 A => XOR1.IN0
 B => XOR2.IN0
 NA => XOR1.IN1
@@ -829,7 +899,7 @@ C <= C.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I6|ha:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I6|ha:I0
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -838,7 +908,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I6|ha:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I6|ha:I1
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -847,7 +917,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7
 A => XOR1.IN0
 B => XOR2.IN0
 NA => XOR1.IN1
@@ -866,7 +936,7 @@ C <= C.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7|ha:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7|ha:I0
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -875,7 +945,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7|ha:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I7|ha:I1
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -884,7 +954,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I8
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I8
 A => XOR1.IN0
 B => XOR2.IN0
 NA => XOR1.IN1
@@ -903,7 +973,7 @@ C <= C.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I8|ha:I0
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I8|ha:I0
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -912,7 +982,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I8|ha:I1
+|PROCESADOR|CPU:I1|DATA_PATH:I0|ALU_8BITS:ALU_UNIT|BIT_SLICE:I8|ha:I1
 a => s.IN0
 a => Cout.IN0
 b => s.IN1
@@ -921,7 +991,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|CPU:I0|ME:I1
+|PROCESADOR|CPU:I1|ME:I1
 clk => edo~1.DATAIN
 rst => edo~3.DATAIN
 IR[0] => Equal0.IN7
@@ -1138,7 +1208,7 @@ Bus2_sel[0] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
 Bus2_sel[1] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|MEMORIA:I1
+|PROCESADOR|MEMORIA:I2
 CLK => MEM_PROGRAMA:MEM_PROG.CLK
 CLK => MEM_DATOS:MEM_DATO.CLK
 CLK => PUERTOS_SALIDA:PUERTOS.CLK
@@ -1607,7 +1677,7 @@ P_out_15[6] <= PUERTOS_SALIDA:PUERTOS.P_out_15[6]
 P_out_15[7] <= PUERTOS_SALIDA:PUERTOS.P_out_15[7]
 
 
-|PROCESADOR|MEMORIA:I1|MEM_PROGRAMA:MEM_PROG
+|PROCESADOR|MEMORIA:I2|MEM_PROGRAMA:MEM_PROG
 CLK => Data_out[0]~reg0.CLK
 CLK => Data_out[1]~reg0.CLK
 CLK => Data_out[2]~reg0.CLK
@@ -1633,7 +1703,7 @@ Data_out[6] <= Data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Data_out[7] <= Data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|MEMORIA:I1|MEM_DATOS:MEM_DATO
+|PROCESADOR|MEMORIA:I2|MEM_DATOS:MEM_DATO
 CLK => RAM~15.CLK
 CLK => RAM~0.CLK
 CLK => RAM~1.CLK
@@ -1716,7 +1786,7 @@ Data_out[6] <= Data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Data_out[7] <= Data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|MEMORIA:I1|PUERTOS_SALIDA:PUERTOS
+|PROCESADOR|MEMORIA:I2|PUERTOS_SALIDA:PUERTOS
 CLK => RAM[15][0].CLK
 CLK => RAM[15][1].CLK
 CLK => RAM[15][2].CLK
@@ -2363,7 +2433,7 @@ P_out_15[6] <= RAM[15][6].DB_MAX_OUTPUT_PORT_TYPE
 P_out_15[7] <= RAM[15][7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PROCESADOR|BCD_to_7Segment:I2
+|PROCESADOR|BCD_to_7Segment:I3
 BCD[0] => Ram0.RADDR
 BCD[1] => Ram0.RADDR1
 BCD[2] => Ram0.RADDR2
